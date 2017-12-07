@@ -43,7 +43,7 @@ li{list-style:none}
 
 html,body{ 
 	width:100%;
-    margin-top: 50px;
+    margin-top: 45px;
     font-size: 16px;
 }
 
@@ -601,7 +601,7 @@ header{
 .wrapper__menu{
     display: flex;
     margin: auto;
-    width: 60%;
+    width: 70%;
    align-items: center;
 	justify-content: space-between; 
 }
@@ -624,10 +624,10 @@ width: 80%;
 .sf-menu > li > a {
     flex: 1;
     align-self: stretch;
-	font-size: 0.8em;
+	font-size: 0.8rem;
 	text-transform: uppercase;
 	font-weight:400;
-	padding:  40px 0px;
+	padding:  2.2rem 0px;
 	
 }
 .sf-menu > li > a:hover{
@@ -649,7 +649,7 @@ width: 80%;
         font-size: 0.7em;
     }
 }
-@media (max-width: 980px) {
+@media (max-width: 867px) {
 	
   .sf-menu{
     display: none;
@@ -659,16 +659,12 @@ width: 80%;
         
 } 
     .logo_img{
-/*        position: fixed;*/
-/*        left: 20%;*/
-/*            top:0;*/
-/*        z-index: 999999;*/
        margin: 5% 35%; 
 
     }
 }
 /*==================  Stuck menu  ======================*/
-.stuck_container{
+.stuck_container {
 width: 100%;
     top: 0;
     left: 0;
@@ -685,6 +681,73 @@ width: 100%;
 	
   .stuck_container  {
     display: none !important;
+  }
+}
+
+
+/*============      rd-navbar-dropdown     ============*/
+.sf-menu  ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 13rem;
+  background: #fff;
+  z-index: 2;
+  box-sizing: border-box;
+}
+.menu__item:nth-child(2):hover .rd-navbar-dropdown{
+    display: block;
+}
+.sf-menu ul > li {
+  position: relative;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.sf-menu ul > li > a {
+  font-size: 1rem;
+  padding: 1rem 0 1rem 1rem;
+    width: 100%;
+  color: #122b5b;
+  background: #fff;
+    text-align: left;
+}
+.sf-menu ul > li + li {
+/*  border-top: 1px solid #d4d4d4;*/
+}
+.sf-menu ul > li.sfHover > a, .sf-menu ul > li > a:hover {
+  color: #ff3e45;
+border-bottom: 1px solid #ff3e45;
+    
+}
+
+.sf-menu ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 235px;
+  margin-top: 0;
+  margin-left: 10px;
+  padding: 0;
+  z-index: 4;
+}
+
+.sf-menu > li > ul > li > .sf-with-ul {
+  position: relative;
+}
+.sf-menu > li > ul > li > .sf-with-ul:before {
+  position: absolute;
+  right: 19px;
+  top: 0;
+  margin-left: -6px;
+  content: "";
+  font: 400 16px/50px "FontAwesome";
+/*  color: #62bfe6;*/
+}
+
+@media (max-width: 767px) {
+  .sf-menu {
+    display: none;
   }
 }
 /*==================   RD Mobile Menu    =====================*/
@@ -758,14 +821,48 @@ border-bottom: 1px solid #ff3e45;
 border-bottom: 1px solid #ff3e45;
   color:#ff3e45;
 }
-
+.rd-mobilemenu_ul a .rd-submenu-toggle {
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  margin-top: -17.5px;
+  width: 32px;
+  height: 32px;
+  font: 400 10px "FontAwesome";
+  line-height: 32px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.1);
+}
+.rd-mobilemenu_ul a .rd-submenu-toggle:after {
+  content: '\f078';
+}
+.rd-mobilemenu_ul a .rd-submenu-toggle:hover {
+  background: #FFF;
+  color: #666;
+}
 
 .rd-mobilemenu_ul a.rd-with-ul {
   position: relative;
 }
-
+.rd-mobilemenu_ul a.rd-with-ul.active .rd-submenu-toggle {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
 .rd-mobilemenu_ul ul a {
 /*  padding-left: 40px;*/
+    font-size: 1rem;
+    color: #122b5b;
 }
 .rd-mobilemenu_ul ul ul a {
 /*  padding-left: 60px;*/
@@ -804,9 +901,10 @@ border-bottom: 1px solid #ff3e45;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .rd-mobilepanel_toggle {
   position: fixed;
-    top: 4px;
+/*  top: 4px;*/
   left: 8px;
   width: 48px;
   height: 48px;
@@ -883,18 +981,19 @@ border-bottom: 1px solid #ff3e45;
   transform: rotate3d(0, 0, 1, 40deg);
 }
 
-@media (max-width: 980px) {
+@media (max-width:980px) {
   body {
+/*    padding-top:50px;*/
       margin-top: 0px;
   }
 
   .rd-mobilemenu, .rd-mobilepanel {
     display: block;
   }
-    
 }
-@media (max-width: 320px){
-      .rd-mobilepanel_title {
+@media (max-width: 320px) {
+  .rd-mobilepanel_title {
+    font-size: 1em;
     padding: 17px 20px 17px 120px;
   }
 }

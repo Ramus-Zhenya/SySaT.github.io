@@ -30,7 +30,17 @@
 	<nav id="nav" class="nav">
 	<ul data-type="navbar" class="sf-menu">
 		<li class="menu__item"><a class="menu__link active" href="index.html">главная</a></li>
-		<li class="menu__item"><a class="menu__link" href="index-1.html">о компании</a></li>
+		<li class="menu__item"><a class="menu__link" href="index-1.html">о компании</a>
+		    
+            <ul class="rd-navbar-dropdown">
+                <li><a href="#">продукция</a></li>
+                <li><a href="#">проэкты</a></li>
+                <li><a href="#">сертификаты</a></li>
+                <li><a href="#">сертификаты</a></li>
+                <li><a href="#">проэкты</a></li>
+             </ul>
+            
+		</li>
 		<li class="menu__item"><a class="menu__link" href="index-2.html">продукция</a></li>
 		<li class="menu__item"><a class="menu__link" href="index-3.html">проэкты</a></li>
 		<li class="menu__item"><a class="menu__link" href="index-4.html">сертификаты</a></li>
@@ -375,7 +385,7 @@
 <script src="js/jquery.rd-navbar.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+<script src="js/superfish.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 
 <script src="js/script.js"></script>
@@ -399,8 +409,18 @@ function detect() {
     prevPos = currPos;
 }
 </script>
-
-
+<script>
+  $(document).ready(function () {
+    o.RDNavbar({}); // Additional options
+  });
+</script>
+<!--
+<script type="text/javascript">
+$(window).load(function () {
+    $('.sf-menu').superfish();
+});
+</script>
+-->
 
 	
 </body>
