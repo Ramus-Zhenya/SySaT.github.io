@@ -120,10 +120,7 @@ particlesJS('particles-js',
     "retina_detect": true,
     "config_demo": {
       "hide_card": false,
-		
-
-
-//      "background_color": "#333",
+		//      "background_color": "#333",
 		
 
     }
@@ -239,15 +236,7 @@ particlesJS('particles-js2',
     "retina_detect": true,
     "config_demo": {
       "hide_card": false,
-		
-
-
-//      "background_color": "#333",
-		
-//      "background_image":"../image/Map2_bg.png",
-//      "background_position": "50% 50%",
-//      "background_repeat": "no-repeat",
-//      "background_size": "cover"
+   "background_size": "cover"
     }
   }
 
@@ -267,11 +256,12 @@ particlesJS('particles-js3',
         "value": "#fff",
 		  
       },
+//        толщина обводки шарика
       "shape": {
         "type": "circle",
         "stroke": {
-          "width": 2,
-          "color": "#fff"
+          "width": 0,
+          "color": "#f5f5f5"
 			
         },
         "polygon": {
@@ -279,7 +269,7 @@ particlesJS('particles-js3',
         },
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.2,
         "random": false,
         "anim": {
           "enable": false,
@@ -303,7 +293,7 @@ particlesJS('particles-js3',
         "enable": true,
         "distance": 150,
         "color": "#fff",
-        "opacity": 0.5,
+        "opacity": 0.2,
         "width": 2
       },
       "move": {
@@ -337,14 +327,14 @@ particlesJS('particles-js3',
         "grab": {
           "distance": 600,
           "line_linked": {
-            "opacity": 1
+            "opacity": .5
           }
         },
         "bubble": {
           "distance": 200,
           "size": 80,
           "duration": 2,
-          "opacity": 8,
+          "opacity": 2,
           "speed": 3
         },
         "repulse": {
@@ -361,15 +351,7 @@ particlesJS('particles-js3',
     "retina_detect": true,
     "config_demo": {
       "hide_card": false,
-		
-
-
-//      "background_color": "#333",
-		
-//      "background_image":"../image/Map2_bg.png",
-//      "background_position": "50% 50%",
-//      "background_repeat": "no-repeat",
-//      "background_size": "cover"
+      "background_size": "cover"
     }
   }
 
