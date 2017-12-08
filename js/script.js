@@ -28,3 +28,16 @@ $(document).ready(function () {
  	});
 });
 
+
+$(window).load(function(){
+$('#light-pagination').pagination({
+     items: 100,
+    itemsOnPage: 10,
+    hrefTextPrefix: '',
+    hrefTextSuffix: '.html',
+    prevText: 'Начало',
+    nextText: 'Конец',
+    cssStyle: 'light-theme'
+});
+
+});
