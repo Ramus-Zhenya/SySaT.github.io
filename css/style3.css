@@ -1,0 +1,92 @@
+/*#122b5b*/
+/*#5076be*/
+li{
+    list-style: none;
+}
+.production{
+    flex-flow: row;
+}
+.accordion {
+  width: 270px;
+/*  margin: 3em auto 2em;*/
+/*  border-radius: 4px;*/
+  display: flex;
+  flex-wrap: wrap;
+}
+.accordion__list {
+  background: #FFF;
+  width: 100%;
+}
+.accordion__list .link :hover{
+  background: #ecf0f3;
+}
+.accordion__list .link {
+  font-size:1rem;
+  font-weight: 700;
+  color: #4d4d4d;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.accordion__list .link__title {
+  padding: 1rem 0 1rem 2rem;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  color: #4d4d4d;
+
+}
+.accordion li:last-child .link {
+  border-bottom: 0;
+}
+
+.accordion li.open .link__title {
+  color: #fff;
+    background: #122b5b;
+}
+
+/**=======================
+* Submenu
+==========================**/
+.submenu {
+  display: none;
+  background: #fff;
+  font-size: 1em;
+}
+
+.submenu li {
+
+}
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #4d4d4d;
+  padding: 1rem 0 1rem 2rem;
+  transition: all 0.25 ease;
+}
+
+.submenu a:hover {
+
+  color: #ff3e45;
+}
+/*==============================================================*/
+/*                        content_production                    */
+/*==============================================================*/
+.content_production{
+/*    width: 60%;*/
+    display: flex;
+    flex-flow:  wrap;
+    
+}
+.wrapper__projects{
+     flex: 1 1 calc(30%) ;
+/*    width: 30%;*/
+}
+.image__projects > a > img{
+    width: 100%;
+}

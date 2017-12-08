@@ -158,6 +158,12 @@ background-size: cover;
 background-position: center;
 background-repeat: no-repeat;   
 }
+.particles_bg_production{
+background-image: url(../image/bg_production.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;    
+}
 /* =============================================================================*/
 .bg__bcg1{
     height: 22vw;
