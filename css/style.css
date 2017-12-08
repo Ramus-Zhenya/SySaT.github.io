@@ -100,16 +100,11 @@ width: 100%;
 height: 100%;
 position: absolute;
 z-index: -10;
-/*background-image: url(../image/img_about/bcg1.jpg);*/
-/*background-size: 86%;*/
-/*background-position: center bottom;*/
-/*background-repeat: no-repeat;*/
 }
 #particles-js2{
 width: 100%;
 height: 100%;
 position: absolute;
-/*top:0;*/
 z-index: -10;
 
 }
@@ -117,14 +112,7 @@ z-index: -10;
 width: 100%;
 height: 100%;
 position: absolute;
-/*top:0;*/
 z-index: -10;
-/*
-    background-image: url(../image/img_about/bg_red.jpg);
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-*/
 }
 
 /* =============================================================================*/
@@ -172,9 +160,10 @@ background-repeat: no-repeat;
 }
 /* =============================================================================*/
 .bg__bcg1{
-    height: 20vw;
+    height: 22vw;
 }
-.bg__bcg1:after{
+.bg__bcg1:after
+{
     content: "";
     position: absolute;
     z-index: -10;
@@ -186,6 +175,7 @@ background-repeat: no-repeat;
     background-repeat: no-repeat;
     
 }
+
 .bg__bcg1:before{
     content: "";
     position: absolute;
@@ -197,7 +187,69 @@ background-repeat: no-repeat;
     background-repeat: no-repeat;
     
 }
-
+.particles_bg_blue:after
+{
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top: 0%;
+    right: -80%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/circle.svg) ;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+.bg__blue .particles_bg_blue:after
+{
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top: 0%;
+    right: -75%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/circle.svg) ;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+.services > .particles_bg_blue:after
+{
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top: 0%;
+    right: -70%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/circle.svg) ;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+.Headre_pic:after{
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top: -40%;
+    left: 52%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/circle.svg) ;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+.Headre_pic:before{
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top: 0%;
+    right: 15%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/circle.svg) ;
+    background-repeat: no-repeat;
+    background-size: 28%;
+}
 .bg__blue{
     margin-top: -100px;
 
