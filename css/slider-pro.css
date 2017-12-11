@@ -1,0 +1,410 @@
+/*!
+*  - v1.2.1
+* Homepage: http://bqworks.com/slider-pro/
+* Author: bqworks
+* Author URL: http://bqworks.com/
+*/
+/* Core
+--------------------------------------------------*/
+.slider-pro {
+	position: relative;
+	margin: 0 auto;
+    width: 100%;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+    display: flex;
+    flex-flow: column;
+}
+
+.sp-slides-container {
+	position: relative;
+    
+}
+
+.sp-mask {
+	position: relative;
+	overflow: hidden;
+}
+
+.sp-slides {
+	position: relative;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.sp-slide {
+	position: absolute;
+    width: 100%;
+}
+
+.sp-image-container {
+	overflow: hidden;
+}
+
+.sp-image {
+	position: relative;
+	display: block;
+	border: none;
+}
+
+.sp-no-js {
+	overflow: hidden;
+	max-width: 100%;
+}
+
+/* Thumbnails
+--------------------------------------------------*/
+.sp-thumbnails-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.sp-top-thumbnails,
+.sp-bottom-thumbnails  {
+	left: 0;
+	margin: 0 auto;
+}
+
+.sp-top-thumbnails {
+	position: absolute;
+	top: 0;
+	margin-bottom: 2px;
+}
+
+.sp-bottom-thumbnails {
+	margin-top: 2px;
+}
+
+.sp-left-thumbnails,
+.sp-right-thumbnails {
+	position: absolute;
+	top: 0;
+    width: 15%;
+}
+
+.sp-right-thumbnails {
+	right: 0px;
+	margin-left: 4px;
+}
+
+.sp-left-thumbnails {
+	left: 2px;
+	margin-right: 2px;
+}
+
+.sp-thumbnails {
+	position: relative;
+}
+
+.sp-thumbnail {
+    border: none;
+}
+
+.sp-thumbnail-container {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Horizontal thumbnails
+------------------------*/
+.sp-top-thumbnails .sp-thumbnail-container,
+.sp-bottom-thumbnails .sp-thumbnail-container {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.sp-top-thumbnails .sp-thumbnail-container:first-child,
+.sp-bottom-thumbnails .sp-thumbnail-container:first-child {
+	margin-left: 0;
+}
+
+.sp-top-thumbnails .sp-thumbnail-container:last-child,
+.sp-bottom-thumbnails .sp-thumbnail-container:last-child {
+	margin-right: 0;
+}
+
+/* Vertical thumbnails 
+----------------------*/
+.sp-left-thumbnails .sp-thumbnail-container,
+.sp-right-thumbnails .sp-thumbnail-container {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.sp-left-thumbnails .sp-thumbnail-container:first-child,
+.sp-right-thumbnails .sp-thumbnail-container:first-child {
+	margin-top: 0;
+}
+
+.sp-left-thumbnails .sp-thumbnail-container:last-child,
+.sp-right-thumbnails .sp-thumbnail-container:last-child {
+	margin-bottom: 0;
+}
+
+/* Right thumbnails with pointer
+--------------------------------*/
+.sp-right-thumbnails.sp-has-pointer {
+	margin-left: 13px;
+}
+
+.sp-right-thumbnails.sp-has-pointer .sp-thumbnail {
+	position: absolute;
+	left: 15px;
+	margin-left: 0 !important;
+}
+
+.sp-right-thumbnails.sp-has-pointer .sp-selected-thumbnail:before {
+	content: '';
+	position: absolute;
+	height: 95%;
+    width: 50%;
+	border: 2px solid #ff3e45;
+	left: 0;
+	top: 0;
+    z-index: 10000;
+	margin-left: 16px;
+}
+
+.sp-right-thumbnails.sp-has-pointer .sp-selected-thumbnail:after {
+/*
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0;
+	top: 50%;
+	margin-top: -8px;
+	border-right: 13px solid #F00;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+*/
+}
+
+
+
+
+
+/* Layers
+--------------------------------------------------*/
+.sp-layer {
+	position: absolute;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-backface-visibility: hidden;
+}
+
+.sp-black {
+	color: #FFF;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.sp-white {
+	color: #000;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.7);
+}
+
+
+
+/* Touch Swipe
+--------------------------------------------------*/
+.sp-grab {
+	cursor:auto;
+}
+
+.sp-grabbing {
+	cursor:auto;
+}
+
+.sp-selectable {
+	cursor: default;
+}
+
+/* Caption
+--------------------------------------------------*/
+.sp-caption-container {
+	text-align: left;
+    font-size: 1rem;
+	margin-top: 10px;
+}
+
+/* Full Screen
+--------------------------------------------------*/
+.sp-full-screen {
+	margin: 0 !important;
+	background-color: #000;
+}
+
+.sp-full-screen-button {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-size: 30px;
+	line-height: 1;
+	cursor: pointer;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.sp-full-screen-button:before {
+	content: '\2195';
+}
+
+.sp-fade-full-screen {
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.slider-pro:hover .sp-fade-full-screen {
+	opacity: 1;
+}
+
+/* Buttons
+--------------------------------------------------*/
+.sp-buttons {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.sp-button {
+	width: 10px;
+	height: 10px;
+	border: 2px solid #000;
+	border-radius: 50%;
+	margin: 4px;
+	display: inline-block;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.sp-selected-button {
+	background-color: #000;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.sp-button {
+		width: 14px;
+		height: 14px;
+	}
+}
+
+@media only screen and (min-width: 568px) and (max-width: 768px) {
+	.sp-button {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+	.sp-button {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+/* Arrows
+--------------------------------------------------*/
+.sp-arrows {
+	position: absolute;
+}
+.sp-vertical .sp-arrows {
+
+	height: 0%;
+	left: 90%;
+	bottom: 50px;
+	margin-left: 0px;
+}
+
+.sp-arrow {
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+    background: #ececec;
+}
+.sp-horizontal .sp-previous-arrow {
+	left: 20px;
+}
+
+.sp-horizontal .sp-next-arrow {
+	right: 0px;
+}
+
+.sp-vertical .sp-previous-arrow {
+	bottom: -50px;
+    right: -37px;
+}
+
+.sp-vertical .sp-next-arrow {
+	bottom: -50px;
+    right: -77px;
+}
+.sp-vertical .sp-previous-arrow:hover,
+.sp-vertical .sp-next-arrow:hover{
+   background: #ff3e45; 
+}
+.sp-previous-arrow:hover:before,
+.sp-previous-arrow:hover:after,
+.sp-vertical .sp-next-arrow:hover:before,
+.sp-vertical .sp-next-arrow:hover:after
+{
+  background-color: #fff; 
+}
+.sp-previous-arrow:before,
+.sp-previous-arrow:after,
+.sp-next-arrow:before,
+.sp-next-arrow:after {
+	content: '';
+	position: absolute;
+	width: 10%;
+	height: 30%;
+	background-color: #757575;
+}
+
+.sp-previous-arrow:before {
+	left: 40%;
+	top: 20%;
+	-webkit-transform: skew(145deg, 0deg);
+	-ms-transform: skew(145deg, 0deg);
+	transform: skew(145deg, 0deg);
+}
+
+.sp-previous-arrow:after {
+	left: 40%;
+	top: 50%;
+	-webkit-transform: skew(-145deg, 0deg);
+	-ms-transform: skew(-145deg, 0deg);
+	transform: skew(-145deg, 0deg);
+}
+
+.sp-next-arrow:before {
+	right: 40%;
+	top: 20%;
+	-webkit-transform: skew(35deg, 0deg);
+	-ms-transform: skew(35deg, 0deg);
+	transform: skew(35deg, 0deg);
+}
+
+.sp-next-arrow:after {
+	right: 40%;
+	top: 50%;
+	-webkit-transform: skew(-35deg, 0deg);
+	-ms-transform: skew(-35deg, 0deg);
+	transform: skew(-35deg, 0deg);
+}
+
