@@ -16,7 +16,9 @@ a{
 p{
     color: #4d4d4d;
 }
-
+li{
+    list-style: none;
+}
 
 
 /* =============================================================================
@@ -39,7 +41,7 @@ body{
  
 }
 h3,h4{
-    
+   color: #122b5b; 
 }
 .about_company h3,.zag3{
    color: #122b5b;
@@ -57,7 +59,7 @@ h2,.menu__link{
 }
 .zag2{
     text-align: center;
-    width: 70%;
+    width: 50%;
     margin:70px auto 0;
     padding-bottom: 30px;
     border-bottom: 1px solid #d4d4d4;
@@ -155,7 +157,7 @@ background-repeat: no-repeat;
 .particles-js__partners{
 background-image: url(../image/bg_partners.jpg);
 background-size: cover;
-background-position: center;
+background-position: center center;
 background-repeat: no-repeat;   
 }
 .particles_bg_production{
@@ -294,6 +296,33 @@ background-repeat: no-repeat;
     padding: 1rem 2.2rem;
 }
 /*=========================================================*/
+/*                          btn                            */
+/*=========================================================*/
+.btn__new .fa{
+   margin-left: 10px; 
+}
+.btn_right{
+   justify-content: flex-end; 
+}
+.btn_left{
+   justify-content: flex-start; 
+}
+.btn_s{
+    display: block;
+    padding: 0.6rem 2rem 0.7rem;
+    color: #fff;
+    background: #ff3e45;
+    border-radius: 50px;
+    box-shadow: 1px 2px 2px rgba(255,62,69,.6), -1px -2px 2px rgba(255,62,69,.3);
+    transition: all .3s;
+}
+.btn_s:hover{
+    box-shadow:0px 0px 0px rgba(255,62,69,.6),0px 0px 0px rgba(255,62,69,.6);
+}
+/*=========================================================*/
+/*                          btn  end                       */
+/*=========================================================*/
+/*=========================================================*/
 /*                           forms                         */
 /*=========================================================*/
 .container_forms{
@@ -370,11 +399,18 @@ footer{
 }
 .footer > ul > li{
     min-width: 200px;
+    position: relative;
 }
 .footer > ul > li > a{
     color: #4d4d4d;
 }
-
+footer .fa{
+    color: #ff3e45;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0;
+    left: -30px
+}
 
 
 
@@ -403,20 +439,7 @@ footer{
     .service > .col{
         min-width: 500px;
     }
-/*
-    .bg__blue:after{
-    content: "";
-    position: absolute;
-    z-index: -10;
 
-    top: 0;
-    right:-7%;
-    width: 60%;
-    height:100%;
-    background-image: url(../image/circle.svg) ;
-    background-repeat: no-repeat;
-    background-size: 100%;
-*/
    
     
 }
@@ -540,6 +563,62 @@ footer{
     .footer > ul > li:nth-child(4){order: 1}
 }  
 
+/*=====================================================================*/
+/*                                 popup                               */
+/*=====================================================================*/
+.wrapper_popup_form{
+ display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+
+.white-popup-block{
+    padding: 20px;
+    
+    
+}
+
+.zag_popup{
+    color: #122b5b;
+    font-weight: 700;
+    font-size: 1rem;
+    width: 80%;
+    text-transform: uppercase;
+    
+}
+.white-popup-block fieldset ol li{
+    display: flex;
+    flex-flow: column;
+    margin: 16px 0;
+    
+}
+.white-popup-block fieldset ol li input
+{
+    padding: 10px 0;
+/*    width: 220px;*/
+    border-radius: 3px;
+    border: 1px solid #d4d4d4;
+}
+.white-popup-block fieldset ol li label,
+.white-popup-block p{
+    font-size: 12 px;
+}
+.white-popup-block fieldset ol li textarea{
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid #d4d4d4;
+}
+.white-popup-block .btn_s{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.white-popup-block span{
+    color: red;
+}
 /* =============================================================================
                                         MENU
    ========================================================================== */
@@ -948,3 +1027,111 @@ border-bottom: 1px solid #ff3e45;
     padding: 17px 20px 17px 120px;
   }
 }
+/*==================  MAP  ======================*/
+#map{
+    overflow: hidden;
+	align-self: flex-end;
+	box-sizing: border-box; 
+	width: 100%;
+	height: 760px;
+    margin:0 auto;
+    top: 0
+    position: absolute;
+}
+[class*="ymaps-2"][class*="-ground-pane"] {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+
+    -webkit-filter: grayscale(100%);
+
+}
+
+
+.form_wrapper_map{
+   position: absolute;
+    top: 30%;
+    left: 25%;
+ 
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px rgba(0,0,0,.5),-1px 2px 2px rgba(0,0,0,.5);
+    
+}
+.form_wrapper_map .input_map{
+    padding: 0.6rem;
+    margin: 10px 0;
+    border:1px solid #d4d4d4;
+    border-radius: 3px;
+}
+.form_wrapper_map h3{
+ color: #122b5b;
+ margin-bottom: 10px; 
+    text-transform: uppercase;
+}
+.form_wrapper_map{
+    display: flex;
+    flex-flow: column;
+
+}
+.btn_form_map{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    color: #fff;
+    background: #ff3e45;
+    box-shadow: 1px 2px 2px rgba(255,62,69,.6),-1px -2px 2px rgba(255,62,69,.6);
+}
+.contacts_map .wrapper{
+    justify-content: space-between;
+    width: 60%;
+    margin: 3rem auto;
+}
+.contacts_map .wrapper .col{
+   min-width: 270px;
+/*    flex: 1 1 calc(50% 270px);*/
+}
+.contacts_map .wrapper .col:first-child{
+    flex: 4;
+}
+.contacts_map .wrapper .col:last-child{
+    flex: 2;
+}
+.contacts_map ul li:first-child {
+    font-weight: 700;
+     color: #122b5b;
+}
+.contacts_map .col:last-child ul:first-child li:last-child{width: 130px;}
+.contacts_map ul li{
+    padding: 0.4rem 0;
+    width: 100%;
+    font-size: 0.9rem
+   
+}
+.contacts_map ul{
+    margin: 2rem 0;
+}
+@media (max-width: 767px) {
+  .map_model {
+    height: 350px;
+  }
+}
+@media (max-width: 440px) {
+  .map_model {
+    height: 300px;
+  }
+    .contacts_map .wrapper{
+        width: 90%}
+   .contacts_map ul{
+    margin: 0.5rem 0;
+} 
+   .contacts_map ul li{
+    padding: 0.2rem 0;
+    width: 80%;
+   
+}
+    .form_wrapper_map{
+   position: absolute;
+    top: 5%;
+        left: 20%;}
+}
+

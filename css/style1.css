@@ -11,10 +11,11 @@
 .btn{
     border:1px solid #fff;
     color: #fff;
-    padding:1rem 4rem 1rem;
+    width: 40%;
+    padding:1rem 0rem 1rem;
     border-radius:50px;
     font-size: 1em;
-/*    margin:50px 50px 0;*/
+ 
 }
 
 .btn:hover{
@@ -383,8 +384,11 @@
                           particles_home 
    ========================================================================== */
 .particles_home{
-   margin: 8rem auto 3rem;
+   margin: 8rem auto 0rem;
     
+}
+.particles_home + .btn_left{
+    margin-bottom: 3rem;
 }
 .particles_home .sys1{
     font-size: 6em;
@@ -399,18 +403,12 @@
 }
 
 .mac_book{
-/* display: flex;*/
-   
-
 }
 .mac_book img{
+    min-width: 300px;
     width: 100%;
-    
 }
-.detailed{
-/*    width: 30%;*/
-        display: flex;
-}
+
 /* =============================================================================
                         particles_home  end
    ========================================================================== */
@@ -418,7 +416,7 @@
                         section class="news__compony"
    ========================================================================== */
 .news__compony{
-    padding: 50px 0;
+    padding: 4rem 0;
 }
 .data{
     padding: 12px;
@@ -432,7 +430,10 @@
 .news__compony{
     justify-content: space-between;
     flex-flow: row wrap;
-    margin-top: 40px;
+    margin: 3rem auto 0rem;
+}
+.news__compony + .btn_right{
+   margin-bottom: 6.2rem;
 }
 .container__new{
     flex: 1 1;
@@ -472,14 +473,15 @@
     font-weight: 600;
     color: #4d4d4d;
 }
+/*
 .all_new_btn{
     justify-content: flex-end;
-    align-items: flex-end;
+
     display: flex;
     width: 50%;
     margin:30px auto 50px;
-    margin: 
 }
+*/
 .all__new__btn,.btn_detailed{
     display: block;
     padding: 10px 30px;
@@ -487,14 +489,8 @@
     background: #ff3e45;
     border-radius: 50px;
 }
-.btn__new:before{
- content: "→";
-    
-	position: absolute;
-	left: 50%;
-    font-size: 20px;
-    line-height: 18px;
-    font-size: 1.5em
+.btn__new .fa{
+   margin-left: 10px; 
 }
 .wrapper__new:hover .btn__new{
     color:#ff3e45 

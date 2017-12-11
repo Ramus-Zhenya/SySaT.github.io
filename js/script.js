@@ -6,7 +6,7 @@ $(document).ready(function () {
 
  
     
-	$(function(){
+$(function(){
  $('.Headre__pic__sl').slick({
  dots: true, 
  slidesToShow: 1,
@@ -28,16 +28,46 @@ $(document).ready(function () {
  	});
 });
 
+//
+//
+//		  $(document).ready(function(){
+//			$('#products').slides({
+//				
+//			
+//				effect: 'slide, fade',
+//				crossfade: true,
+//				slideSpeed: 200,
+//				fadeSpeed: 500,
+//				generateNextPrev: true,
+//				generatePagination: false
+//			});
+//		});
+$(document).ready(function() {
+    $('.pgwSlideshow').pgwSlideshow({
+      autoSlide: true
+    });
+});
+    
 
-$(window).load(function(){
-$('#light-pagination').pagination({
-     items: 100,
-    itemsOnPage: 10,
-    hrefTextPrefix: '',
-    hrefTextSuffix: '.html',
-    prevText: 'Начало',
-    nextText: 'Конец',
-    cssStyle: 'light-theme'
+
+	  $(document).ready(function() {
+	  $('.popup-with-form').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		// When elemened is focused, some mobile browsers in some cases zoom in
+		// It looks not nice, so we disable it:
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 1700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
 });
 
-});
+
