@@ -33,7 +33,7 @@
 
 @media (min-width: 320px) {
     .our_partners {
-            width: 60%;
+            width: 80%;
         column-count: 1;
     }
 	.wrapper{
@@ -42,6 +42,10 @@
 	.item{
 		padding: 0.3em;
 	}
+    .our_partners {
+    margin: 2rem auto 6rem;
+    padding: 0;
+}
 }
 
 @media (min-width: 700px) {
