@@ -1457,8 +1457,10 @@ flex: 1;
     display: flex;
 
 }
- .good_inner > col > article > h4{
+ .good_inner > .col > article > h4{
     flex: 1;
+     padding-right: 15px;
+  
 }
  .good_inner > .col > article > div{
     flex: 3;
@@ -1795,15 +1797,31 @@ font-size: 18px;
          width: 100%;
      }
      .thumbs a{
-         margin: 20px 0 20px;
+         margin: 0;
          height: 100px;
      }
      .thumbs a:last-child{
-    margin:20px 0 20px;
+    margin:0;
 }
      .thumbs img{
          width: 70%;
      }
+      .good_inner > .col > article{
+    display: flex;
+          flex-flow: column;
+
+}
+ .good_inner > .col > article > h4{
+    flex: 1;
+   margin: 20px 0;
+}
+ .good_inner > .col > article > div{
+    flex: 3;
+    margin-bottom: 0px;
+}
+ .good_inner > .col > article > div > p{
+    margin-bottom: 10px;
+}
 }   
     
     
