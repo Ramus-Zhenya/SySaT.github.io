@@ -98,9 +98,11 @@
 
 .sp-thumbnail {
     border: none;
+
 }
 
 .sp-thumbnail-container {
+    
 	position: relative;
 	display: block;
 	overflow: hidden;
@@ -108,7 +110,22 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+.sp-caption{
+   padding: 1rem 0; 
+}
+#example5 .sp-thumbnail-image-container {
+	width: 290px;
+	height: 100px;
 
+	float: left;
+    
+}
+
+#example5 .sp-thumbnail-image {
+    width: 290px;
+	height: 100%;
+    object-fit: cover;
+}
 /* Horizontal thumbnails
 ------------------------*/
 .sp-top-thumbnails .sp-thumbnail-container,
@@ -148,41 +165,28 @@
 /* Right thumbnails with pointer
 --------------------------------*/
 .sp-right-thumbnails.sp-has-pointer {
-	margin-left: 13px;
+/*	margin-left: 13px;*/
 }
 
 .sp-right-thumbnails.sp-has-pointer .sp-thumbnail {
 	position: absolute;
-	left: 15px;
+/*	left: 15px;*/
 	margin-left: 0 !important;
 }
 
 .sp-right-thumbnails.sp-has-pointer .sp-selected-thumbnail:before {
 	content: '';
 	position: absolute;
-	height: 95%;
-    width: 50%;
-	border: 2px solid #ff3e45;
+	height: 80px;
+    width: 128px;
+	border-left: 5px solid #ff3e45;
 	left: 0;
 	top: 0;
     z-index: 10000;
-	margin-left: 16px;
+/*	margin-left: 16px;*/
 }
 
-.sp-right-thumbnails.sp-has-pointer .sp-selected-thumbnail:after {
-/*
-	content: '';
-	position: absolute;
-	width: 0;
-	height: 0;
-	left: 0;
-	top: 50%;
-	margin-top: -8px;
-	border-right: 13px solid #F00;
-	border-top: 8px solid transparent;
-	border-bottom: 8px solid transparent;
-*/
-}
+
 
 
 
@@ -233,7 +237,7 @@
 .sp-caption-container {
 	text-align: left;
     font-size: 1rem;
-	margin-top: 10px;
+	margin-top: 3rem;
 }
 
 /* Full Screen
@@ -275,15 +279,15 @@
 	position: relative;
 	width: 100%;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 15px;
 }
 
 .sp-button {
-	width: 10px;
-	height: 10px;
-	border: 2px solid #000;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #ff3e45;
 	border-radius: 50%;
-	margin: 4px;
+	margin: 5px;
 	display: inline-block;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -292,29 +296,10 @@
 }
 
 .sp-selected-button {
-	background-color: #000;
+	background-color: #ff3e45;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-	.sp-button {
-		width: 14px;
-		height: 14px;
-	}
-}
 
-@media only screen and (min-width: 568px) and (max-width: 768px) {
-	.sp-button {
-		width: 16px;
-		height: 16px;
-	}
-}
-
-@media only screen and (min-width: 320px) and (max-width: 568px) {
-	.sp-button {
-		width: 18px;
-		height: 18px;
-	}
-}
 
 /* Arrows
 --------------------------------------------------*/
@@ -324,8 +309,8 @@
 .sp-vertical .sp-arrows {
 
 	height: 0%;
-	left: 90%;
-	bottom: 50px;
+	right: 40px;
+	bottom: 40px;
 	margin-left: 0px;
 }
 
@@ -336,23 +321,25 @@
 	height: 40px;
 	cursor: pointer;
     background: #ececec;
+    top:0;
+    bottom: 0;
 }
 .sp-horizontal .sp-previous-arrow {
-	left: 20px;
+	left: 100%;
 }
 
 .sp-horizontal .sp-next-arrow {
-	right: 0px;
+	right: 100%;
 }
 
 .sp-vertical .sp-previous-arrow {
-	bottom: -50px;
-    right: -37px;
+	top: 100%;
+    right: 0;
 }
 
 .sp-vertical .sp-next-arrow {
-	bottom: -50px;
-    right: -77px;
+	top: 100%;
+    left: 0;
 }
 .sp-vertical .sp-previous-arrow:hover,
 .sp-vertical .sp-next-arrow:hover{
