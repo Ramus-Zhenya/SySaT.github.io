@@ -99,6 +99,8 @@ h2{
     margin-left: -10%;
     margin-right: -10%;
     background: #fff;
+    position: relative;
+/*    z-index: -1;*/
 }
 .container{
   
@@ -114,6 +116,8 @@ h2{
     flex: 1 1 calc(50%);
 }
 .wrapper{
+    position: relative;
+    z-index: 3;
 	width: 50%;
 	margin:0 auto ;
 	display: flex;
@@ -283,7 +287,7 @@ background-repeat: no-repeat;
 .home_form > .container_forms:before{
     content: "";
     position: absolute;
-    z-index:-1;
+    z-index:-3;
     top: 5%;
     right: 5%;
     width: 100%;
@@ -304,8 +308,69 @@ background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: 28%;
 }
+.certificates:after{
+    content: "";
+    position: absolute;
+    background-image: url(../image/circle.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: left center;
+    width: 100%;
+    height: 100%;
+    bottom: -100px;
+    left: -7%;
     
+}
+.certificates:before{
+    content: "";
+    position: absolute;
+    background-image: url(../image/circle.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right top;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    left: 7%;
+} 
+.all__news:before{
+    content: "";
+    position: absolute;
+    background-image: url(../image/circle.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right top;
+    width: 100%;
+    height: 100%;
+    top: 2%;
+    left: 7%;
+}
+.all__news:after,
+.bg__map__projects:after{
+    content: "";
+    position: absolute;
+    background-image: url(../image/circle.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: left center;
+    width: 100%;
+    height: 100%;
+    bottom: -10%;
+    left: -7%;
+} 
+.bg__map__projects:before{
+    content: "";
+    position: absolute;
+    background-image: url(../image/circle.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right top;
+    width: 100%;
+    height: 100%;
+    top: 17%;
+    left: 7%;
 
+}
 .bg__blue{
     margin-top: -100px;
 
@@ -1271,21 +1336,14 @@ background: -ms-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 10
     justify-content: center;
 }
 .all_news .container_all_new{
-
-/*    flex: 1 1 calc(50%);*/
-    padding: 1rem;
-/*	margin: 0 0 1rem 0;*/
-	width: 300px;
-	box-sizing: border-box;
-
-   
+padding: 1rem;
+width: 300px;
+box-sizing: border-box;
 }
-
-
 .wrapper__new{
     border-radius: 5px;
     box-shadow: 1px 1px 2px #999,-1px 1px 2px #999;
-  
+  background: #fff;
 }
 .image__new img{
     width: 100%;
@@ -1309,7 +1367,6 @@ background: -ms-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 10
     font-weight: 600;
     color: #4d4d4d;
 }
-
 .wrapper__new:hover .btn__new{
     color:#ff3e45 
 }
@@ -1344,50 +1401,20 @@ background: -ms-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 10
 	width: 100%;
 	height: auto;
 	display: block;
-     
 }
 .inner_partner{padding: 2rem;}
 .inner_partner h5{
     color: #122b5b;
     margin-bottom: 2rem;
 }
-
 /*======================================================================*/
 /*                             партнеры                                 */
 /*======================================================================*/
 /*======================================================================*/
 /*                             сертификаты                              */
 /*======================================================================*/
-
 .certificates{
     position: relative;
-}
-.certificates:after{
-    content: "";
-    position: absolute;
-    background-image: url(../image/circle.svg);
-    background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: left center;
-    width: 100%;
-    height: 100%;
-    bottom: -100px;
-    left: -7%;
-/*    z-index: -10;*/
-    
-}
-.certificates:before{
-    content: "";
-    position: absolute;
-    background-image: url(../image/circle.svg);
-    background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: right top;
-    width: 100%;
-    height: 100%;
-    top: 10%;
-    left: 7%;
-/*    z-index: -10;*/
 }
 .certificates .wrapper{
     padding: 0rem 0 4rem;
@@ -1499,7 +1526,7 @@ flex: 1;
 /*======================================================================*/
 /*                             продукция inner  end                     */
 /*======================================================================*/
-.projects{
+.projects__inner > .projects{
     padding: 1rem 0 9rem;
 }
 .projects__inner > .wrapper > h3{
@@ -1515,11 +1542,11 @@ footer{
 }
 .footer .wrapper {
     justify-content: space-between;
-    width: 80%;
+    width: 60%;
     padding: 20px 0;
 }
 .footer > ul > li{
-
+    display: flex;
     flex: 1 1 calc(20%) ;
     position: relative;
      margin:0 20px;
@@ -1527,15 +1554,15 @@ footer{
 .footer > ul > li > a{
     color: #4d4d4d;
    font-size: 14px;
+    margin: auto;
 }
 footer .fa{
     color: #ff3e45;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     position: absolute;
     top: 0;
-    left: -30px;
-}
 
+}
 @media (max-width: 1440px) {
 .wrapper,
     .container_forms .wrapper{
