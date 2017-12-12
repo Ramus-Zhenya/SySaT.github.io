@@ -63,8 +63,8 @@ body{
 h3,h4{
    color: #122b5b; 
 }
-.about_company h3,.zag3{
-   color: #122b5b;
+ h3{
+ 
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: 2px; 
@@ -1231,7 +1231,7 @@ background: -ms-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 10
     display: flex;
     flex-flow: row wrap;
     margin-top: 2.4rem;
-	margin:0 auto 6rem;
+	margin:1rem auto 7rem;
 	padding: 0;
 
 }
@@ -1289,7 +1289,9 @@ background: -ms-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 10
 /*======================================================================*/
 /*                              НОВОСТИ    end                          */
 /*======================================================================*/
-
+/*======================================================================*/
+/*                             партнеры                           */
+/*======================================================================*/
 .our_partners {
    
     column-count: 3;
@@ -1322,6 +1324,73 @@ background: -ms-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 10
     color: #122b5b;
     margin-bottom: 2rem;
 }
+
+/*======================================================================*/
+/*                             партнеры                                 */
+/*======================================================================*/
+/*======================================================================*/
+/*                             сертификаты                              */
+/*======================================================================*/
+
+.certificates{
+    position: relative;
+}
+
+.certificates:after{
+    content: "";
+    position: absolute;
+    background-image: url(../image/circle.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: left center;
+    width: 100%;
+    height: 100%;
+    bottom: -100px;
+    left: -7%;
+/*    z-index: -10;*/
+    
+}
+.certificates:before{
+    content: "";
+    position: absolute;
+    background-image: url(../image/circle.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right top;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    left: 7%;
+/*    z-index: -10;*/
+}
+.container_white .wrapper{
+    padding: 0rem 0 4rem;
+    flex-flow: column;
+    margin: 3rem auto;
+}
+.wrapper_docs{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 3rem 0 1rem;
+    border-top:1px solid #d4d4d4;
+    justify-content: flex-start;
+}
+.item_docs{
+
+    flex: 1 1 260px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+.certificates > .wrapper > .zag3{
+   text-align: center;
+    padding: 2rem 0;
+}
+/*======================================================================*/
+/*                             сертификаты                              */
+/*======================================================================*/
 
 
 
@@ -1637,6 +1706,11 @@ font-size: 18px;
      .all_news .col{
          flex-flow: wrap;
      }
+     .certificates > .wrapper > .zag3{
+   text-align: center;
+    padding: 2rem 0;
+         font-size: 1rem;
+}
 }   
     
     
