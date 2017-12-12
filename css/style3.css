@@ -20,7 +20,7 @@
 .white-popup-block fieldset ol li input
 {
     padding: 10px 0;
-/*    width: 220px;*/
+    width: 220px;
     border-radius: 3px;
     border: 1px solid #d4d4d4;
 }

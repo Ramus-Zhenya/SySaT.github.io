@@ -386,7 +386,7 @@
                           particles_home 
    ========================================================================== */
 .particles_home{
-   margin: 8rem auto 0rem;
+   margin: 8rem auto 6rem;
     
 }
 .particles_home + .btn_left{
