@@ -1074,9 +1074,10 @@ width: 90%;
     flex-flow: column;
     margin: 4rem auto;
 }
-.content_production{
+.content_production,.good_inner{
     display: flex;
     flex-flow:row wrap;
+    padding: 1rem 0 8rem;
 }
 .wrapper_popup_form h4{
     text-transform: uppercase;
@@ -1290,7 +1291,7 @@ background: -ms-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 10
 /*                              НОВОСТИ    end                          */
 /*======================================================================*/
 /*======================================================================*/
-/*                             партнеры                           */
+/*                                 партнеры                             */
 /*======================================================================*/
 .our_partners {
    
@@ -1335,7 +1336,6 @@ background: -ms-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 10
 .certificates{
     position: relative;
 }
-
 .certificates:after{
     content: "";
     position: absolute;
@@ -1363,7 +1363,7 @@ background: -ms-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 10
     left: 7%;
 /*    z-index: -10;*/
 }
-.container_white .wrapper{
+.certificates .wrapper{
     padding: 0rem 0 4rem;
     flex-flow: column;
     margin: 3rem auto;
@@ -1389,7 +1389,87 @@ background: -ms-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 10
     padding: 2rem 0;
 }
 /*======================================================================*/
-/*                             сертификаты                              */
+/*                             сертификаты    end                       */
+/*======================================================================*/
+
+/*======================================================================*/
+/*                             продукция inner                          */
+/*======================================================================*/
+
+
+.wrapper_popup_form{
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.good_inner{
+    margin: 3rem auto;
+}
+.good_inner > .col{
+    flex: 1 1 calc(40%);
+/*    width: 50%;*/
+}
+.good_inner .col:first-child{
+    display: flex;
+    align-self: flex-start;
+    margin-right: 30px;
+}
+.good_inner .col:last-child{
+   margin-left: 30px; 
+}
+.images_big{
+   flex: 3;
+    align-self: flex-start;
+order: 2;
+    padding:10px 60px;
+    border: 1px solid #d4d4d4; 
+
+}
+.images_big img{
+margin: auto auto;
+    width: 100%;
+}
+.thumbs{
+display: flex;
+ flex-flow: column;
+ justify-content: space-between;
+flex: 1;
+
+}
+.thumbs a{display: flex;
+   border: 1px solid #d4d4d4; 
+    margin: 0 20px 20px 0;
+      height:50px;
+    flex: 1;
+}
+.thumbs a:last-child{
+    margin: 0 20px 0px 0;
+}
+.thumbs img{
+    width: 50%;
+    margin:auto auto;
+
+}
+.images_big img {display: none}
+.images_big .curent {display: block}
+
+ .good_inner > .col > article{
+    display: flex;
+
+}
+ .good_inner > col > article > h4{
+    flex: 1;
+}
+ .good_inner > .col > article > div{
+    flex: 3;
+    margin-bottom: 30px;
+}
+ .good_inner > .col > article > div > p{
+    margin-bottom: 20px;
+}
+
+/*======================================================================*/
+/*                             продукция inner  end                     */
 /*======================================================================*/
 
 
@@ -1420,12 +1500,6 @@ footer .fa{
     left: -30px;
 }
 
-
-
-
-
-
-
 @media (max-width: 1440px) {
 .wrapper,
     .container_forms .wrapper{
@@ -1436,8 +1510,6 @@ footer .fa{
         width: 100%;
     }
 }
-
-
 
 @media (max-width: 1280px) {
 	
@@ -1476,9 +1548,6 @@ justify-content: flex-end;
     }
 }
 
-
-
-
 @media (max-width: 1024px){
  
     .icons_principles{
@@ -1513,9 +1582,6 @@ justify-content: flex-end;
     }
 
 }
-    
-
-
     
 @media (max-width: 980px){
        .wrapper,.container_forms .wrapper{
@@ -1650,6 +1716,12 @@ font-size: 18px;
     .container_all_new{
         width: 300px;
     }
+    .good_inner > .col:first-child{
+        margin-right: 0;
+    }
+    .good_inner > .col:last-child{
+        margin-left: 0;
+    }
 }
 
 
@@ -1693,7 +1765,7 @@ font-size: 18px;
      .content_production {
     display: flex;
     flex-flow: column;
-         margin-bottom: 4rem
+         margin-bottom: 4rem;
 }
       .container__projects {
     flex: 0 0 calc(70%);
@@ -1711,6 +1783,27 @@ font-size: 18px;
     padding: 2rem 0;
          font-size: 1rem;
 }
+     .good_inner .col:first-child{
+    display: flex;
+    align-self: flex-start;
+         flex-flow: column;
+
+}
+     .thumbs{
+         flex-flow: row;
+         order: 2;
+         width: 100%;
+     }
+     .thumbs a{
+         margin: 20px 0 20px;
+         height: 100px;
+     }
+     .thumbs a:last-child{
+    margin:20px 0 20px;
+}
+     .thumbs img{
+         width: 70%;
+     }
 }   
     
     
@@ -1848,6 +1941,10 @@ font-size: 18px;
     flex: 0 0 calc(100%);
     margin: auto;
 }
+     .thumbs a{
+
+         height: 70px;
+     }
     
 }
     
