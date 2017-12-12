@@ -1548,26 +1548,32 @@ footer{
 .footer > ul > li{
     display: flex;
     flex: 1 1 calc(20%) ;
-    position: relative;
-     margin:0 20px;
+/*     margin:0 10px;*/
+   
 }
 .footer > ul > li > a{
     color: #4d4d4d;
    font-size: 14px;
     margin: auto;
+     position: relative;
 }
 footer .fa{
     color: #ff3e45;
     font-size: 1.2rem;
     position: absolute;
     top: 0;
+    left: -30px;
 
 }
 @media (max-width: 1440px) {
 .wrapper,
-    .container_forms .wrapper{
+    .container_forms .wrapper,
+    {
     width: 70%;
   }
+    .footer .wrapper{
+        width: 80%;
+    }
     .zag_form{
 
         width: 100%;
@@ -1580,7 +1586,7 @@ footer .fa{
     width: 80%;
    }
     .footer .wrapper {
-    justify-content: flex-start;
+/*    justify-content: flex-start;*/
    }
     .service > .col{
         min-width: 500px;
@@ -1786,6 +1792,9 @@ font-size: 18px;
         margin-left: 0;
     }
 }
+    .footer .wrapper{
+        width: 80%;
+    }
 
 
 /*===============================================*/
@@ -1893,6 +1902,9 @@ font-size: 18px;
     h2{font-size: 1.2rem}
     p{
         
+    }
+    .footer .wrapper{
+        width: 100%;
     }
      .news__compony{
          width: 80%;
