@@ -1,126 +1,8 @@
 /*#122b5b*/
 /*#5076be*/
-li{
-    list-style: none;
-}
-.accordion {
-width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.accordion__list {
-  background: #FFF;
-  width: 100%;
-}
-.accordion__list .link :hover{
-  background: #ecf0f3;
-}
-.accordion__list .link {
-  font-size:1rem;
-  font-weight: 700;
-  color: #4d4d4d;
-  cursor: pointer;
-  border-bottom: 1px solid #ccc;
-  display: block;
-  position: relative;
-  transition: all 0.4s ease;
-}
-.accordion__list .link__title {
-  padding: 1rem 0 1rem 1rem;
-  position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  display: block;
-  background-color: transparent;
-  color: #4d4d4d;
-
-}
-.accordion li:last-child .link {
-  border-bottom: 0;
-}
-
-.accordion li.open .link__title {
-  color: #fff;
-    background: #122b5b;
-}
-
-/**=======================
-* Submenu
-==========================**/
-.submenu {
-  display: none;
-  background: #fff;
-  font-size: 1em;
-}
-
-.submenu li {
-
-}
-
-.submenu a {
-  display: block;
-  text-decoration: none;
-  color: #4d4d4d;
-  padding: 1rem 0 1rem 1rem;
-  transition: all 0.25 ease;
-}
-
-.submenu a:hover {
-
-  color: #ff3e45;
-}
-/*==============================================================*/
-/*                        content_production                    */
-/*==============================================================*/
-.our_production{
-    flex-flow: column;
-    margin: 4rem auto;
-}
-.content_production{
-    display: flex;
-    flex-flow:row wrap;
-}
-
-.wrapper_popup_form h4{
-    text-transform: uppercase;
-}
-.container__production{
-    display: flex;
-    flex-flow:row wrap;
-   flex:3 ;
-/*    min-width: 370px;*/
-}
-.content__menu{
-    flex:1 ;
-    min-width: 250px;
-}
-
-.wrapper__production{
-     flex: 1 1 calc(20%) ;
-    padding: 20px;
-    border: 1px solid #d4d4d4;
-    border-radius: 5px;
-min-width: 200px;
-    margin: 10px;
-}
-.image__production img{
-    width: 100%;
-}
-.production{
-    font-size: 14px; 
-}
-.production:hover h4{
-    color: #5076be;
-}
-
-
 .white-popup-block{
     padding: 20px;
-    
-    
 }
-
 .zag_popup{
     color: #122b5b;
     font-weight: 700;
@@ -156,5 +38,5 @@ min-width: 200px;
     margin-bottom: 10px;
 }
 .white-popup-block span{
-    color: red;
+    color:#ff3e45;
 }

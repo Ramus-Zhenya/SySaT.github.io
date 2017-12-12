@@ -419,7 +419,6 @@ background-repeat: no-repeat;
                         section class="about_us"
                                  END
    ========================================================================== */
-
 .about{
     margin:3rem auto 6rem;
     display: grid;
@@ -639,8 +638,6 @@ background-repeat: no-repeat;
 /* =============================================================================
                        Компании «СисЭйТи»
    ========================================================================== */
-
-
 .particles_home{
    margin: 8rem auto 0rem;
     
@@ -659,14 +656,10 @@ background-repeat: no-repeat;
     color: #fff;
     width: 90%;
 }
-
-.mac_book{
-}
 .mac_book img{
     min-width: 300px;
     width: 100%;
 }
-
 /* =============================================================================
                         Компании «СисЭйТи» end
    ========================================================================== */
@@ -697,7 +690,6 @@ background-repeat: no-repeat;
     flex: 1 1 calc(10% );
     margin: 10px;
 }
-
 .wrapper__new{
     border-radius: 5px;
     box-shadow: 1px 1px 2px #999,-1px 1px 2px #999;
@@ -766,7 +758,6 @@ background-repeat: no-repeat;
     justify-content: flex-end;
    
 }
-
 /*============================================================================*/
 /*                              partners_home end                             */
 /*============================================================================*/
@@ -807,8 +798,6 @@ background-repeat: no-repeat;
 .map img{
     width: 100%;
 }
-
-
 /*=========================================================*/
 /*                           forms                         */
 /*=========================================================*/
@@ -829,7 +818,6 @@ background-repeat: no-repeat;
 }
 .home_form .wrapper{
    justify-content: center; 
-/*    height: 80%;*/
 }
 .home_form .wrapper p{
     width: 100%;
@@ -846,10 +834,9 @@ background-repeat: no-repeat;
 }
 .home_form .container_forms .wrapper{
     height: 90%;
-justify-content: flex-end;
+    justify-content: flex-end;
 
 }
-
 /*============================================================================*/
 .container_forms{
 /*    margin-top: -100px;*/
@@ -912,7 +899,403 @@ height: 460px;
 /*=========================================================*/
 /*                        forms end                        */
 /*=========================================================*/
+/*=========================================================*/
+/*                         о компании                      */
+/*=========================================================*/
+.Our_services h1{
+    color: #122b5b;
+    font-size:5.5em;
+    text-transform: uppercase;
+    
+}
+.Our_services h1 span{
+    color:#ff3e45;
+}
+.Our_services h3{
+    margin: 1.8em 0;
+}
+.Our_services > .wrapper{
+    padding:3em 0 3em;
+  
+}
+.Our_services .wrapper{
+    border-bottom: 1px solid #dadada;
+}
+.Our_services .wrapper .col{
+   display: flex; 
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+     text-align: left;
+    
+}
+.Our_services .wrapper:first-child > .col:first-child{
+    justify-content: flex-end;
+}
+.Our_services > .wrapper > .col p{
+    margin-bottom: 2em;
+}
+.Our_services > .wrapper > .col:last-child{
+    padding-left: 1em;
+}
+.Our_services > .wrapper > .col:first-child{
+    padding-right: 1em;
+}
+.Our_services > .wrapper:first-child > .col:last-child > img{
+    margin: auto auto;
+}
+.Our_services > .wrapper:last-child > .col:last-child > img{
+    margin: auto auto;
+}
+.Our_services .jpag img{
+    width: 80%;
+}
+.service{
+    margin: 12.5em auto 6.2em;
+}
+.service > .col:first-child{
+   display: flex; 
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.jpeg > img{
+   width: 80%;
+}
+.service > article h3{
+    margin-bottom: 2.5em;
+    color: #fff;
+}
+.service > article p{
+    color: #fff;
+    margin: 1.2em 0;
+  
+}
+.our_main_principles > .wrapper{
+  flex-flow: column;
+   padding-bottom: 6.2em; 
+}
+.our_principles .wrapper{
+    width: 100%;
+    justify-content: center;
+    padding: 25px 0;
+}
+hr{
+   width: 70%;
 
+/*    color: #d4d4d4;*/
+    margin: 0 auto 50px;
+}
+.icons_principles{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    margin: 25px 0
+}
+.icons_principles > h3{
+    font-size: 1em;
+    letter-spacing: 01px;
+    
+}
+.icons_principles > img{
+    width: 70px;
+    margin-right: 20px
+}
+.our_principles > p{
+   
+    width: 70%;
+    margin:0 auto 20px;
+}
+/*=========================================================*/
+/*                   о компании  end                       */
+/*=========================================================*/
+/*==============================================================*/
+/*                            продукция                         */
+/*==============================================================*/
+.accordion {
+width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.accordion__list {
+  background: #FFF;
+  width: 100%;
+}
+.accordion__list .link :hover{
+  background: #ecf0f3;
+}
+.accordion__list .link {
+  font-size:1rem;
+  font-weight: 700;
+  color: #4d4d4d;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.accordion__list .link__title {
+  padding: 1rem 0 1rem 1rem;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  color: #4d4d4d;
+}
+.accordion li:last-child .link {
+  border-bottom: 0;
+}
+.accordion li.open .link__title {
+  color: #fff;
+    background: #122b5b;
+}
+/**=======================
+* Submenu
+==========================**/
+.submenu {
+  display: none;
+  background: #fff;
+  font-size: 1em;
+}
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #4d4d4d;
+  padding: 1rem 0 1rem 1rem;
+  transition: all 0.25 ease;
+}
+.submenu a:hover {
+    color: #ff3e45;
+}
+.our_production{
+    flex-flow: column;
+    margin: 4rem auto;
+}
+.content_production{
+    display: flex;
+    flex-flow:row wrap;
+}
+.wrapper_popup_form h4{
+    text-transform: uppercase;
+}
+.container__production{
+    display: flex;
+    flex-flow:row wrap;
+    flex:3 ;
+}
+.content__menu{
+    flex:1 ;
+    min-width: 250px;
+}
+.wrapper__production{
+    flex: 1 1 calc(20%) ;
+    padding: 20px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    min-width: 200px;
+    margin: 10px;
+}
+.image__production img{
+    width: 100%;
+}
+.production{
+    font-size: 14px; 
+}
+.production:hover h4{
+    color: #5076be;
+}
+.wrapper_popup_form{
+ display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+
+/*=============================================================*/
+/*                         продукция    end                    */
+/*=============================================================*/
+/*=============================================================*/
+/*                           проекты                           */
+/*=============================================================*/
+.bg__map__pprojects{
+    background-image: url(../image/partners_bg_map.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center 10%;
+}
+.all_projects{
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: 2.4rem;
+	margin:5rem auto;
+	padding: 0;
+
+}
+.container__projects{
+    flex: 1 1 calc(32%);
+    padding: 1rem;
+	margin: 0 0 1rem 0;
+	width: 100%;
+	box-sizing: border-box;
+    align-self:stretch;
+   
+}
+.wrapper__projects{
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #999,-1px 1px 2px #999;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background: #fff;
+
+}
+.wrapper__projects a:first-child{
+    display: block;
+
+}
+.image__projects{
+    flex:1 1 30%;
+    box-sizing: border-box;
+    width: 100%;
+}
+.image__projects img{
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover; 
+
+}
+.projects{
+    color: #4d4d4d;
+flex:2 2 70%;
+    display: flex;
+    flex-flow: column;
+  
+}
+.projects h4{
+  padding:1rem 1rem ;
+    flex:1 1 30%;
+}
+.projects p{
+    margin: .5rem 1rem ;
+    flex:2 2 40%;
+    position: relative;
+}
+.projects p:before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    background: -moz-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 100%); /* ie10+ */
+    background: linear-gradient(151deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 100%); /* w3c */
+}
+.btn__projects{
+    position: relative;
+    border-top: 1px solid #dadada;
+    padding: 1.2rem 0 1.2rem 1.2rem ;
+    display: block;
+    font-weight: 600;
+    color: #4d4d4d;
+}
+.btn__projects:before{
+ content: "→";
+    
+	position: absolute;
+	left: 9rem;
+    font-size: 20px;
+    line-height: 18px;
+    font-size: 1.5em
+}
+.wrapper__projects:hover .btn__projects{
+    color:#ff3e45 
+}
+/*=============================================================*/
+/*                         проекты    end                      */
+/*=============================================================*/
+/*======================================================================*/
+/*                              НОВОСТИ                                 */
+/*======================================================================*/
+.all_news{
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 2.4rem;
+	margin:0 auto 6rem;
+	padding: 0;
+
+}
+.all_news .col{
+/*    flex-flow:wrap row;*/
+    display: flex;
+/*    flex: 1 1 calc();*/
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+.all_news .container_all_new{
+
+/*    flex: 1 1 calc(50%);*/
+    padding: 1rem;
+/*	margin: 0 0 1rem 0;*/
+	width: 300px;
+	box-sizing: border-box;
+
+   
+}
+
+
+.wrapper__new{
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #999,-1px 1px 2px #999;
+  
+}
+.image__new img{
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+.new{
+    color: #4d4d4d;
+}
+.new h4{
+  padding:0 1rem;
+}
+.new p{
+    margin: 1rem 1rem ;
+    font-size: 14px;
+}
+.btn__new{
+    position: relative;
+    border-top: 1px solid #dadada;
+    padding: 1.2rem 0 1.2rem 1.2rem ;
+    display: block;
+    font-weight: 600;
+    color: #4d4d4d;
+}
+
+.btn__new:before{
+ content: "→";
+    
+	position: absolute;
+	left: 9rem;
+    font-size: 20px;
+    line-height: 18px;
+    font-size: 1.5em
+}
+.wrapper__new:hover .btn__new{
+    color:#ff3e45 
+}
+/*======================================================================*/
+/*                              НОВОСТИ    end                          */
+/*======================================================================*/
 footer{
    background:  #080a0c;
 }
@@ -951,18 +1334,16 @@ footer .fa{
     width: 70%;
   }
     .zag_form{
-/*    font-size: 1em;*/
+
         width: 100%;
     }
-
-
 }
 
 
 
 @media (max-width: 1280px) {
 	
-   .wrapper,.container_forms .wrapper{
+    .wrapper,.container_forms .wrapper{
     width: 80%;
    }
     .footer .wrapper {
@@ -971,11 +1352,11 @@ footer .fa{
     .service > .col{
         min-width: 500px;
     }
-   .zag1{
+    .zag1{
      width: 90%;
      margin:.5rem auto;
   }
-   .sys1{
+    .sys1{
         font-size: 6em;
        line-height: 1em;
     }
@@ -983,15 +1364,22 @@ footer .fa{
     width: 40%;
     padding:0.6rem 0rem 0.5rem;
 }
-.home_form .container_forms .wrapper{
+    .home_form .container_forms .wrapper{
     height: 90%;
 justify-content: flex-end;
 
 }
-       .home_form .container_forms .wrapper h2{
+    .home_form .container_forms .wrapper h2{
         font-size: 1.8rem;
     }
+    .all_news .container__new {
+/*    flex: 1 2 calc(26%);*/
+/*        padding: 0.8rem;*/
+    }
 }
+
+
+
 
 @media (max-width: 1024px){
  
@@ -1002,7 +1390,7 @@ justify-content: flex-end;
 
     }
        .container__new{
-/*       min-height: 350px;*/
+
     flex: 1 1 calc(33%);
 }
            .container__new:nth-child(2){
@@ -1022,10 +1410,16 @@ justify-content: flex-end;
     .footer > ul > li:nth-child(2){order: 4}
     .footer > ul > li:nth-child(3){order: 3}
     .footer > ul > li:nth-child(4){order: 2}
-
+   .container__projects {
+    flex: 1 1 calc(35%);
+    }
+    .all_news .col {
+/*        flex: 1 1 calc(34%);*/
+    }
 }
     
-    
+
+
     
 @media (max-width: 980px){
        .wrapper,.container_forms .wrapper{
@@ -1056,12 +1450,8 @@ justify-content: flex-end;
        .container_forms .wrapper{
         height: 80%;
         width: 80%;
-/*        justify-content: center;*/
     }
-    .form_wrapper{
-/*        justify-content: space-around;*/
-    }
-    .entry_input{
+     .entry_input{
         margin-bottom: 15px;
         height: 30px;
           
@@ -1074,7 +1464,6 @@ justify-content: flex-end;
         display: none;
     }
     .scale{display: none}
-    
     .news__compony {
     padding: 0rem 0 2rem;
         
@@ -1082,19 +1471,19 @@ justify-content: flex-end;
     .news__compony + .btn_right{
         justify-content: flex-start;
     }
-.ittem{
+    .ittem{
    display: flex;
     flex-flow: column;
     justify-content: center;
 }
-.ittem h3{
+    .ittem h3{
 font-size: 1em;
 }
     .about{
         display: flex;
     }
-.foto{display: none;}
-      .service > .col{
+    .foto{display: none;}
+    .service > .col{
         min-width:100%;
     }
     .particles_home p {
@@ -1108,11 +1497,9 @@ font-size: 1em;
     .icons_principles{
         min-width: 440px;
     }
-     
     .Headre_pic{
        height:300px;  
     }
-
     .Headre_pic .wrapper{
    height: 300px;
    justify-content:space-around;     
@@ -1145,11 +1532,32 @@ padding-top: 30px; }
 font-size: 18px;
         padding-bottom: 30px;
   }
-    
-        .footer> ul > li{
+    .footer> ul > li{
         min-width: 300px; 
     }
-} 
+    .Our_services .wrapper .col:last-child {
+    padding-left: 0;
+}
+    .Our_services .wrapper .col:first-child {
+    padding-right: 0;
+}
+    .Our_services > .wrapper {
+     padding: 0; 
+}
+    .service .col h3{
+        text-align: right;
+        padding-right: 50px
+    }
+    .Our_services h3,.service > article h3{
+        margin: 1rem 0;
+    }
+    .container_all_new{
+        width: 300px;
+    }
+}
+
+
+/*===============================================*/
  @media(max-width: 660px){
      .news__compony{
          width: 60%;
@@ -1171,6 +1579,37 @@ font-size: 18px;
          .head__btn__wrap{
         width: 80%;
     }
+     .wrapper_popup_form h4,.popup-with-form{
+        font-size: 1rem;
+         flex-flow: column;
+         margin-bottom: 1.5rem;
+     }
+     .our_production {
+    margin: 2rem auto;
+}
+     .wrapper_popup_form{
+        display: flex;
+      width: 100%;
+    justify-content: center;
+         align-items: center;
+    flex-flow: column;
+     }
+     .content_production {
+    display: flex;
+    flex-flow: column;
+         margin-bottom: 4rem
+}
+      .container__projects {
+    flex: 0 0 calc(70%);
+          margin: auto;
+    }
+     .all_projects{
+        margin: 2rem auto 6rem;
+    }
+
+     .all_news .col{
+         flex-flow: wrap;
+     }
 }   
     
     
@@ -1296,6 +1735,19 @@ font-size: 18px;
          font-size: 1.1rem;
        text-shadow: 1px 1px 1px #333,-1px -1px 1px #333;
 }
+    .Our_services .wrapper .col,
+    .service .col{
+        margin:0 10px ;
+       flex: 1;
+    }
+    .wrapper_popup_form h4{
+        font-size: 0.9rem;
+    }
+    .container__projects {
+    flex: 0 0 calc(100%);
+    margin: auto;
+}
+    
 }
     
     @media (max-width: 320px){
@@ -1343,14 +1795,7 @@ font-size: 18px;
 /*=====================================================================*/
 /*                                 popup                               */
 /*=====================================================================*/
-.wrapper_popup_form{
- display: flex;
-    flex-flow: wrap;
-    width: 100%;
-    justify-content: space-between;
-    align-items: flex-end;
-    align-self: flex-end;
-}
+
 
 
 .white-popup-block{
@@ -1801,7 +2246,7 @@ border-bottom: 1px solid #ff3e45;
 @media (max-width: 320px) {
   .rd-mobilepanel_title {
     font-size: 1em;
-        padding: 19px 20px 19px 165px;
+           padding: 19px 20px 19px ;
   }
 }
 /*==================  MAP  ======================*/

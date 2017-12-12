@@ -29,9 +29,6 @@ order: 2;
 .images_big img{
 margin: auto auto;
     width: 100%;
-/*    max-width: 90%;*/
-/*    height: 90%;*/
-/*    object-fit: cover;*/
 }
 .thumbs{
 display: flex;
