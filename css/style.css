@@ -1422,20 +1422,23 @@ box-sizing: border-box;
     margin: 3rem auto;
 }
 .wrapper_docs{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
+ border-top:1px solid #d4d4d4;
+    margin:0 auto 1rem;
     padding: 3rem 0 1rem;
-    border-top:1px solid #d4d4d4;
-    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
 }
 .item_docs{
-
-    flex: 1 1 260px;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-
+    float: left;
+    clear: right;
+    margin: 5px;
+    width: 275px;
+    height: 380px;
+   display: inline-block;
+}
+item_docs img{
+  
+    object-fit: cover;
 }
 .certificates > .wrapper > .zag3{
    text-align: center;
@@ -1799,6 +1802,11 @@ font-size: 18px;
 }
    
 @media(max-width: 660px){
+    .wrapper_docs{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
      .news__compony{
          width: 60%;
      }
