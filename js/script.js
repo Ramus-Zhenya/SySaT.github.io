@@ -28,9 +28,11 @@ $(function(){
  	});
 });
 
-
-
-
+$(document).ready(function() {
+    $('.pgwSlideshow').pgwSlideshow({
+      autoSlide: true
+    });
+});
     
 //====================================================================
 $(document).ready(function() {
@@ -85,29 +87,27 @@ $(document).ready(function() {
 
 //====================================================================
 
-$(function() {
 
-var el = document.getElementById('sys1');
-spanize(el);
 
-function spanize(el) {
-	el.innerHTML =  el.innerHTML.replace(/(.)/g, '<span>$1</span>');
-}
-var el = document.getElementById('sys2');
-spanize(el);
 
-function spanize(el) {
-	el.innerHTML =  el.innerHTML.replace(/(.)/g, '<span>$1</span>');
-}
-var el = document.getElementById('sys3');
-spanize(el);
+    window.addEventListener('DOMContentLoaded', function() {
 
-function spanize(el) {
-	el.innerHTML =  el.innerHTML.replace(/(.)/g, '<span>$1</span>');
-}
+      [].forEach.call( document.querySelectorAll('.sys1'), function(el) {
+
+       el.innerHTML =  el.innerHTML.replace(/(.)/g, '<span>$1</span>')
+
 });
-//====================================================================
 
+        });
+
+//var el = document.getElementById('sys1');
+//spanize(el);
+//
+//function spanize(el) {
+//	el.innerHTML =  el.innerHTML.replace(/(.)/g, '<span>$1</span>');
+//}
+
+//====================================================================
 
 
 

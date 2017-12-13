@@ -48,9 +48,8 @@ body{
     text-transform: uppercase;
     letter-spacing:8px;
 }
-#sys1 > span:nth-child(n+4){color: #ff3e45;}
-#sys2 > span:nth-child(n+4){color: #ff3e45;}
-#sys3 > span:nth-child(n+4){color: #ff3e45;}
+
+.sys1 > span:nth-child(n+4){color: #ff3e45;}
 .zag1{
     color: #fff;
     width:500px;
@@ -919,8 +918,7 @@ background-repeat: no-repeat;
      background-image: url(../image/img_about/vignette.png);
     background-repeat: no-repeat;
     background-size: 500px;
-
-    background-position: 60% 5%;
+     background-position: 78% 100px;
 }
 .home_form .container_forms .wrapper{
     height: 90%;
@@ -943,6 +941,7 @@ height: 480px;
     width: 400px;
     font-size: 2.5em; 
     text-align: left;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),-2px -2px 5px rgba(0,0,0,0.3);
 }
 .container_forms .wrapper h2{
     margin: 0;
@@ -971,11 +970,13 @@ height: 480px;
 }
 .entry_input{
     padding-left: 15px;
+    margin: 0 10px;
     box-sizing: border-box;
     height: 50px;
     width: 250px;
+    border-radius: 3px;
     margin-bottom: 20px;
-    box-shadow :0px 0px 18px #515151; 
+    box-shadow :2px 2px 5px rgba(0,0,0,0.3),-2px -2px 5px rgba(0,0,0,0.3); 
     outline:none;
     border: none;
 }
@@ -1586,11 +1587,9 @@ footer .fa{
 
 @media (max-width: 1280px) {
 	
-    .wrapper,.container_forms .wrapper{
+    .wrapper,
+    .container_forms .wrapper{
     width: 80%;
-   }
-    .footer .wrapper {
-/*    justify-content: flex-start;*/
    }
     .service > .col{
         min-width: 500px;
@@ -1609,6 +1608,7 @@ footer .fa{
 }
     .home_form .container_forms .wrapper{
     height: 90%;
+        width: 80%;
 justify-content: flex-end;
 
 }
@@ -1678,9 +1678,8 @@ justify-content: flex-end;
     .home_form .container_forms .wrapper h2,
    .container_forms .wrapper h2{
     margin: 0;
-      width: 70%;
-         font-size: 1.5rem;
-       text-shadow: 1px 1px 1px #333,-1px -1px 1px #333;
+    width: 100%;
+    font-size: 1.5rem;
 }
        .container_forms .wrapper{
         height: 80%;
@@ -1798,15 +1797,17 @@ font-size: 18px;
      .footer > .wrapper{
         width: 80%;
     }
-
-}
-   
-@media(max-width: 660px){
     .wrapper_docs{
         display: flex;
         flex-flow: wrap;
         justify-content: center;
     }
+    
+
+}
+   
+@media(max-width: 660px){
+    
      .news__compony{
          width: 60%;
      }
@@ -2023,9 +2024,8 @@ font-size: 18px;
         .home_form .container_forms .wrapper h2,
    .container_forms .wrapper h2{
     margin: 0;
-      width: 100%;
-         font-size: 1.1rem;
-       text-shadow: 1px 1px 1px #333,-1px -1px 1px #333;
+    width: 100%;
+    font-size: 1.1rem;
 }
     .Our_services .wrapper .col,
     .service .col{
