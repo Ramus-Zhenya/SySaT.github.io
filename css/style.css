@@ -48,9 +48,9 @@ body{
     text-transform: uppercase;
     letter-spacing:8px;
 }
-.at{
-    color: #ff3e45;
-}
+#sys1 > span:nth-child(n+4){color: #ff3e45;}
+#sys2 > span:nth-child(n+4){color: #ff3e45;}
+#sys3 > span:nth-child(n+4){color: #ff3e45;}
 .zag1{
     color: #fff;
     width:500px;
@@ -511,11 +511,11 @@ background-repeat: no-repeat;
                                  END
    ========================================================================== */
 .about{
-    margin:3rem auto 6rem;
+   display: grid;
+    grid-template-columns: 2fr 1fr 250px 1fr 2fr;
+    grid-template-rows:2fr 125px 125px 2fr; 
 
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
-    grid-template-rows:1fr 1fr 1f 1f ; 
+    padding-bottom: 4rem;
 }
 .about_Production,.about_Command,.about_Programs{
    grid-column-start: 1;
@@ -542,7 +542,7 @@ background-repeat: no-repeat;
 }
 .ittem h3{
   padding: 20px 0;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 .ittem:nth-child(3)  h3{
     padding: 0 0 20px
@@ -561,77 +561,72 @@ background-repeat: no-repeat;
    grid-column-end: 5;
    grid-row-start: 1;
    grid-row-end: 5;  
-/*    margin: auto ;*/
-    width: 100%;
-    height: 100%;
-    padding: 30px;
+ position: relative;
+    width: 400px;
+    height: 400px;
+margin: auto auto;
+    background-image: url(../image/dots.svg);
+    background-repeat: no-repeat;
+   background-position: center center;
+    background-size: 100%;
+     border-radius: 50%;
+    
 }
+.foto{
+    grid-column-start: 3;
+   grid-column-end: 4;
+   grid-row-start: 2;
+   grid-row-end: 4;
+
+}
+/*
 .dotos__svg img{
     width: 100%;
     height: 100%;
 }
+*/
 
 
 .icon__Production{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    
-    justify-self: end;
-    align-self: center; 
+   top:0;
+    left:48px;
 }
 .icon__Command{
-    grid-column-start: 2;
-   grid-column-end: 3;
-      grid-row-start: 2;
-   grid-row-end: 3;
+    top:-20px;
+     left:-31px;
 }
 .icon__Programs{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    
-    justify-self:center;
-    align-self: start;
+  bottom: -80px;
+    left:8px;
 }
 .icon__Design{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    
-    justify-self:start;
-    align-self: center;
+    top:-27px;
+     left:326px;
 }
 .icon__Installation{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    
-    justify-self:center;
-    align-self: start;
+  bottom: 0;
+    left:326px;
 }
+
 .fotos_Production,
 .fotos_Command,
 .fotos_Programs,
 .fotos_Design,
 .fotos_Installation{
     display: none;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 5;
     position: relative;
     border-radius: 50%;
-    width: 290px;
-    height: 290px;
+    width:250px;
+    height:250px;
     box-sizing: border-box;
     overflow: hidden;
     margin: auto;
-
+    object-fit: cover;
+}
+.foto img{
+    width: 100%;
+/*    height: 100%;*/
+    object-fit: cover;
 }
 
 .foto:after{
@@ -639,12 +634,11 @@ background-repeat: no-repeat;
    position: absolute; 
     top:0;
     left: 0;
-     width: 100%;
+    width: 100%;
     height: 100%;
     z-index: 20;
     background: rgba(31,70,134,.6);
-
-   border-radius: 50%; 
+    border-radius: 50%; 
 
   
 }
@@ -654,7 +648,7 @@ background-repeat: no-repeat;
     position: absolute;
     top:40%;
     color: #fff;
-    font-size: 2em;
+    font-size: 1.8em;
     z-index: 2000;
     text-shadow: 2px 2px 2px #333;
 }
@@ -682,11 +676,11 @@ background-repeat: no-repeat;
 {
     display:block;
 }
-.icon__Programs{
-    margin-left: 25px ;
-}
-.icon__Installation{
-    margin-right: 30px 
+.scale{
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
 }
 .scale > img{
     transition: .3s;
@@ -712,19 +706,19 @@ background-repeat: no-repeat;
     z-index: 200;
     
 }
-.about_Production:hover ~ .icon__Production:before,
-.about_Command:hover ~ .icon__Command:before,
-.about_Design:hover ~ .icon__Design:before,
-.about_Programs:hover ~ .icon__Programs:before,
-.about_Installation:hover ~ .icon__Installation:before
+.about_Production:hover ~ .dotos__svg > .icon__Production:before,
+.about_Command:hover ~ .dotos__svg > .icon__Command:before,
+.about_Design:hover ~ .dotos__svg > .icon__Design:before,
+.about_Programs:hover ~ .dotos__svg > .icon__Programs:before,
+.about_Installation:hover ~ .dotos__svg > .icon__Installation:before
 {
     display: none;
 }
-.about_Production:hover ~ .icon__Production > img,
-.about_Command:hover ~ .icon__Command > img,
-.about_Design:hover ~ .icon__Design > img,
-.about_Programs:hover ~ .icon__Programs > img,
-.about_Installation:hover ~ .icon__Installation > img{
+.about_Production:hover ~ .dotos__svg > .icon__Production > img,
+.about_Command:hover ~ .dotos__svg > .icon__Command > img,
+.about_Design:hover ~ .dotos__svg > .icon__Design > img,
+.about_Programs:hover ~ .dotos__svg > .icon__Programs > img,
+.about_Installation:hover ~ .dotos__svg > .icon__Installation > img{
     transform: scale(1);
 }
 /* =============================================================================
@@ -748,9 +742,14 @@ background-repeat: no-repeat;
     color: #fff;
     width: 90%;
 }
+.mac_book{
+    display: flex;
+    align-items: flex-end;
+}
 .mac_book img{
     min-width: 300px;
     width: 100%;
+/*    margin: auto auto;*/
 }
 /* =============================================================================
                         Компании «СисЭйТи» end
@@ -1582,6 +1581,7 @@ footer .fa{
 
         width: 100%;
     }
+    p{font-size: 14px;}
 }
 
 @media (max-width: 1280px) {
