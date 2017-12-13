@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" media="screen" href="css/style.css">
 
-<script src="js/jquery.js"></script>
+
   
 </head>
 <body>
@@ -25,11 +25,11 @@
 	<nav id="nav" class="nav">
 	<ul data-type="navbar" class="sf-menu">
 		<li class="menu__item"><a class="menu__link" href="index.html">главная</a></li>
-		<li class="menu__item"><a class="menu__link " href="index-1.html">о компании</a>
+		<li class="menu__item"><a class="menu__link " href="#">о компании</a>
 		
 		
 		    <ul class="rd-navbar-dropdown">
-                <li><a href="#">о нас</a></li>
+                <li><a href="index-1.html">о нас</a></li>
                 <li><a href="index-1_2.html">партнеры</a></li>
              </ul>
 		
@@ -85,10 +85,17 @@
 				<label for="phone">Телефон <span>*</span></label>
 				<input id="phone" name="phone" type="tel" placeholder="" required="">
 			</li>
-			<li>
-				<label for="phone"> Регион <span>*</span></label>
-				<input id="phone" name="phone" type="tel" placeholder="" required="">
-			</li>
+<li>
+			<label for="phone"> Регион <span>*</span></label>
+			<select >
+               <option selected>Выберите из списка</option>
+                <option>Регион1</option>
+                <option>Регион2</option>
+                <option>Регион3</option>
+                <option>Регион4</option>
+                <option>Регион5</option>
+            </select>
+</li>
 			<li>
 				<label for="textarea">Сообщение</label>
 				<textarea id="textarea"></textarea>
@@ -281,85 +288,10 @@
 
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
+<script src="js/jquery.js"></script>
 <script src="js/jquery.rd-navbar.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
-
-<script type="text/javascript">
-
- 
-var nav = document.getElementsByClassName('stuck_container')[0];
-var prevPos = window.scrollY;
-
-setInterval(detect, 1000);
-
-function detect() {
-
-    var currPos = window.scrollY;
-    var scrolled = prevPos - currPos;
-    if (scrolled < 0) {
-        nav.style.top = '-130px';
-    }
-    if (scrolled > 0) {
-        nav.style.top = '0px';
-    }
-    prevPos = currPos;
-}
-
-</script>
-<script>
- $(function(){
-	var Accordion = function(el, multiple) {
-		this.el = el || {};
-		this.multiple = multiple || false;
-
-		// Variables
-		var link = this.el.find('.link');
-		// Eventos
-		link.on('click', {el: this.el, multiple: this.multiple},this.dropdown)
-	}
-
-	Accordion.prototype.dropdown = function(e) {
-		var $el = e.data.el;
-			$this = $(this),
-			$next = $this.next();
-
-		// Desencadena evento de apertura en los elementos siguientes a la clase link = ul.submenu
-		$next.slideToggle();
-		// Agregar clase open a elemento padre del elemento con clase link = li
-		$this.parent().toggleClass('open');
-		
-		//Parametro inicial que permite ver 1 solo submenu abierto 
-		if(!e.data.multiple){
-			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-		}
-
-	}
-	// Elegir submenus multiples (true) submenus uno a la vez (false)
-	var accordion = new Accordion($('#accordion'), false);
-});  
-
-    </script>
-<script type="text/javascript">
-	  $(document).ready(function() {
-	  $('.popup-with-form').magnificPopup({
-		type: 'inline',
-		preloader: false,
-		focus: '#name',
-
-		// When elemened is focused, some mobile browsers in some cases zoom in
-		// It looks not nice, so we disable it:
-		callbacks: {
-			beforeOpen: function() {
-				if($(window).width() < 1700) {
-					this.st.focus = false;
-				} else {
-					this.st.focus = '#name';
-				}
-			}
-		}
-	});
-});
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>

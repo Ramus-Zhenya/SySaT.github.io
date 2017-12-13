@@ -9,16 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" media="screen" href="css/style.css">
-    <link rel="stylesheet" media="screen" href="css/style2-2.css">
-     <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-     
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&amp;subset=cyrillic" rel="stylesheet">
-    
-<script src="js/jquery.js"></script>
+        <link rel="stylesheet" media="screen" href="css/style.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+
   
 </head>
 <body>
@@ -36,7 +31,7 @@
 		<li class="menu__item"><a class="menu__link " href="index-1.html">о компании</a>
 		
 		    <ul class="rd-navbar-dropdown">
-                <li><a href="#">о нас</a></li>
+                <li><a href="index-1.html">о нас</a></li>
                 <li><a href="index-1_2.html">партнеры</a></li>
              </ul>
 		
@@ -137,13 +132,6 @@
 </div>
 
 </section>
-
-
-
-
-
-
-
 </main>
 <!------------------------------------------------------------>
 <!--                          forms                         -->
@@ -186,69 +174,11 @@
         </ul>
 
 </footer>
-
-
-
+<script src="js/jquery.js"></script>
 <script src="js/jquery.rd-navbar.js"></script>
 <script src="js/jquery-3.1.1.min.js"></script>
-
-
-<script src="https://cd     njs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/script.js"></script>
-
-<script>
- $(".show-image").click(function() {
-    event.preventDefault();
-    var mainImage = $(this).index(); 
-    $('.images_big img').removeClass('curent');
-    $('.images_big img').eq(mainImage).addClass('curent'); 
-});   
-    </script>
-<script type="text/javascript">
-var nav = document.getElementsByClassName('stuck_container')[0];
-var prevPos = window.scrollY;
-
-setInterval(detect, 1000);
-
-function detect() {
-
-    var currPos = window.scrollY;
-    var scrolled = prevPos - currPos;
-    if (scrolled < 0) {
-        nav.style.top = '-130px';
-    }
-    if (scrolled > 0) {
-        nav.style.top = '0px';
-    }
-    prevPos = currPos;
-}
-</script>
-
-<script type="text/javascript">
-	  $(document).ready(function() {
-	  $('.popup-with-form').magnificPopup({
-		type: 'inline',
-		preloader: false,
-		focus: '#name',
-
-		// When elemened is focused, some mobile browsers in some cases zoom in
-		// It looks not nice, so we disable it:
-		callbacks: {
-			beforeOpen: function() {
-				if($(window).width() < 1700) {
-					this.st.focus = false;
-				} else {
-					this.st.focus = '#name';
-				}
-			}
-		}
-	});
-});
-</script>
-
-
-	
 </body>
 </html>

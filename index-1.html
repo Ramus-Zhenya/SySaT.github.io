@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" media="screen" href="css/style.css"> 
 
-<script src="js/jquery.js"></script>
+
   
 </head>
 <body>
@@ -26,11 +26,11 @@
 	
 	<nav id="nav" class="nav">
 	<ul data-type="navbar" class="sf-menu">
-		<li class="menu__item"><a class="menu__link" href="index.html">главная</a></li>
-		<li class="menu__item"><a class="menu__link active" href="index-1.html">о компании</a>
+		<li class="menu__item"><a class="menu__link" href="#">главная</a></li>
+		<li class="menu__item"><a class="menu__link active" href="">о компании</a>
 		
 		  <ul class="rd-navbar-dropdown">
-                <li><a href="#">о нас</a></li>
+                <li><a href="index-1.html" class="menu__link active">о нас</a></li>
                 <li><a href="index-1_2.html">партнеры</a></li>
              </ul>
 		
@@ -165,81 +165,41 @@
 <!------------------------------------------------------------>
 <!--                          forms                         -->
 <!------------------------------------------------------------>                   
-        <section class="container_forms">
+<section class="container_forms">
            <div class="bg__red">
                <div id="particles-js" class="particles_bg__red"></div>
                 <div class="wrapper">
                     <h2 class="zag_form">хотите сотрудничать с нами? или нужна консультация?</h2>
                     <p>заполните поля и наш оператор свяжется с Вами в течение 10 минут.</p>
 
-<form class="form_wrapper">
-<!--	    <label for="name"></label>-->
+    <form class="form_wrapper">
 		<input  class="entry_input" id="name" name="name" type="text" placeholder="Как вас завут" required="">
-		
-<!--		<label for="phone"></label>-->
 		<input class="entry_input" id="phone" name="phone" type="tel" placeholder="Ваш номер тел." required="">
-			
-<!--		<label for="email"></label>-->
 		<input class="entry_input" id="email" name="email" type="email" placeholder="example@domain.com" required="">
-		
 		<button class="entry_input submit_btn">
 		Заказать звонок
 		</button>
-	
-</form>
+    </form>
                 </div>
             </div>
-        </section> 
+</section> 
 <!------------------------------------------------------------>
 <!--                      forms  end                        -->
 <!------------------------------------------------------------>    
 </main>
-<!------------------------------------------------------------>
-<!--                         footer                         -->
-<!------------------------------------------------------------> 
 <footer class="footer">
-
         <ul class="wrapper">
            <li><a href="#">ООО "СиСЭйТи" 2016 Privasy policy</a></li>
            <li><a href="#">222520 Минская обл.,<br>г. Борисов. ул. 1 Июля д. 6</a></li>
            <li><a href="#">8 (0177) 73-63-97<br>8 (0177) 73-89-04</a></li>
            <li><a href="#">Sys.@tut.by</a></li>
         </ul>
-
 </footer>
-<!------------------------------------------------------------>
-<!--                     footer  end                        -->
-<!------------------------------------------------------------>	
-
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
+<script src="js/jquery.js"></script>
 <script src="js/jquery.rd-navbar.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-
- 
-var nav = document.getElementsByClassName('stuck_container')[0];
-var prevPos = window.scrollY;
-
-setInterval(detect, 1000);
-
-function detect() {
-
-    var currPos = window.scrollY;
-    var scrolled = prevPos - currPos;
-    if (scrolled < 0) {
-        nav.style.top = '-130px';
-    }
-    if (scrolled > 0) {
-        nav.style.top = '0px';
-    }
-    prevPos = currPos;
-}
-
-</script>
-
-
-
-	
+<script src="js/script.js"></script>
 </body>
 </html>

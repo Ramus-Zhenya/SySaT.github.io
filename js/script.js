@@ -3,7 +3,7 @@ $(document).ready(function () {
     o.RDNavbar({}); // Additional options
   });
 
-
+//====================================================================
  
     
 $(function(){
@@ -28,36 +28,18 @@ $(function(){
  	});
 });
 
-//
-//
-//		  $(document).ready(function(){
-//			$('#products').slides({
-//				
-//			
-//				effect: 'slide, fade',
-//				crossfade: true,
-//				slideSpeed: 200,
-//				fadeSpeed: 500,
-//				generateNextPrev: true,
-//				generatePagination: false
-//			});
-//		});
 $(document).ready(function() {
     $('.pgwSlideshow').pgwSlideshow({
       autoSlide: true
     });
 });
     
-
-
-	  $(document).ready(function() {
+//====================================================================
+$(document).ready(function() {
 	  $('.popup-with-form').magnificPopup({
 		type: 'inline',
 		preloader: false,
 		focus: '#name',
-
-		// When elemened is focused, some mobile browsers in some cases zoom in
-		// It looks not nice, so we disable it:
 		callbacks: {
 			beforeOpen: function() {
 				if($(window).width() < 1700) {
@@ -69,5 +51,95 @@ $(document).ready(function() {
 		}
 	});
 });
+
+//====================================================================
+ $(function(){
+	var Accordion = function(el, multiple) {
+		this.el = el || {};
+		this.multiple = multiple || false;
+		var link = this.el.find('.link');
+		link.on('click', {el: this.el, multiple: this.multiple},this.dropdown)
+	}
+
+	Accordion.prototype.dropdown = function(e) {
+		var $el = e.data.el;
+			$this = $(this),
+			$next = $this.next();
+		$next.slideToggle();
+		$this.parent().toggleClass('open');
+		if(!e.data.multiple){
+			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+		}
+}
+	var accordion = new Accordion($('#accordion'), false);
+});  
+
+
+//====================================================================
+
+ $(".show-image").click(function() {
+    event.preventDefault();
+    var mainImage = $(this).index(); 
+    $('.images_big img').removeClass('curent');
+    $('.images_big img').eq(mainImage).addClass('curent'); 
+}); 
+
+
+//====================================================================
+
+
+
+
+//====================================================================
+
+
+
+
+//====================================================================
+
+
+
+
+
+
+//====================================================================
+var nav = document.getElementsByClassName('stuck_container')[0];
+var prevPos = window.scrollY;
+setInterval(detect, 1000);
+function detect() {
+    var currPos = window.scrollY;
+    var scrolled = prevPos - currPos;
+    if (scrolled < 0) {
+        nav.style.top = '-130px';
+    }
+    if (scrolled > 0) {
+        nav.style.top = '0px';
+    }
+    prevPos = currPos;
+}
+
+ 
+//====================================================================
+
+
+
+//====================================================================
+
+
+
+
+
+//====================================================================
+
+
+
+
+
+//====================================================================
+
+
+
+
+
 
 

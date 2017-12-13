@@ -4,15 +4,10 @@
   <meta charset="utf-8">
   <title>проекты</title>
   <meta name="description" content="">
-<!--  <meta name="author" content="Vincent Garreau" />-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" media="screen" href="css/style.css">
-  <link rel="stylesheet" media="screen" href="css/style4.css">
-   <link rel="stylesheet" media="screen" href="css/simplePagination.css">
-<!--  <script src="js/jquery.js"></script>-->
-  
 </head>
 <body>
 <header class="stuck_container">
@@ -25,10 +20,10 @@
 	<nav id="nav" class="nav">
 	<ul data-type="navbar" class="sf-menu">
 		<li class=""><a class="menu__link " href="index.html" title="Home">главная</a></li>
-		<li class=""><a class="menu__link" href="index-1.html">о компании</a>
+		<li class=""><a class="menu__link" href="#">о компании</a>
 		
 		    <ul class="rd-navbar-dropdown">
-                <li><a href="#">о нас</a></li>
+                <li><a href="index-1.html">о нас</a></li>
                 <li><a href="index-1_2.html">партнеры</a></li>
              </ul>
 		
@@ -244,14 +239,7 @@
   <div class="wrapper">
   </div>
 </section>
-
-<!------------------------------------------------------------>
-<!--                   projects  end                        -->
-<!------------------------------------------------------------>
-  
-<!------------------------------------------------------------>
-<!--                          forms                         -->
-<!------------------------------------------------------------>                   
+</main>             
         <section class="container_forms">
            <div class="bg__red">
                <div id="particles-js3" class="particles_bg__red"></div>
@@ -260,16 +248,10 @@
                     <p>заполните поля и наш оператор свяжется с Вами в течение 10 минут.</p>
 
                     <form class="form_wrapper">
-<!--	    <label for="name"></label>-->
 		<input  class="entry_input" id="name" name="name" type="text" placeholder="Как вас завут" required="">
-		
-<!--		<label for="phone"></label>-->
 		<input class="entry_input" id="phone" name="phone" type="tel" placeholder="Ваш номер тел." required="">
-			
-<!--		<label for="email"></label>-->
 		<input class="entry_input" id="email" name="email" type="email" placeholder="example@domain.com" required="">
-		
-		<button class="entry_input submit_btn">
+	    <button class="entry_input submit_btn">
 		Заказать звонок
 		</button>
 	
@@ -277,12 +259,6 @@
                 </div>
             </div>
         </section> 
-<!------------------------------------------------------------>
-<!--                      forms  end                        -->
-<!------------------------------------------------------------>   
- 
-
-</main>
 <footer class="footer">
 
         <ul class="wrapper">
@@ -293,34 +269,10 @@
         </ul>
 
 </footer>	
-<!-- scripts -->
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
 <script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/jquery.simplePagination.js"></script>
 <script src="js/jquery.rd-navbar.js"></script>
-
-<script type="text/javascript">
-  $(document).ready(function () {
-    o.RDNavbar({}); // Additional options
-  });
-</script>
-
-<script type='text/javascript'> 
-$(window).load(function(){
-$('#light-pagination').pagination({
-	pages: 10,
-    hrefTextPrefix: '',
-    hrefTextSuffix: '.html',
-    prevText: 'Начало',
-    nextText: 'Конец',
-    cssStyle: 'light-theme'
-});
-
-}); 
-</script>
-
-
-	
+<script src="js/script.js"></script>
 </body>
 </html>
