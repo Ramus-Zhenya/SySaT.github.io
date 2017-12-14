@@ -99,7 +99,7 @@ h2{
     margin-right: -10%;
     background: #fff;
     position: relative;
-/*    z-index: -1;*/
+    z-index: 1;
 }
 .container{
   
@@ -178,6 +178,7 @@ background-repeat: no-repeat;
 .particles_bg__red{
 background-image: url(../image/bg_red.jpg);
 background-size: cover;
+    background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat; 
 }
@@ -900,8 +901,11 @@ margin: auto auto;
     align-items: flex-end;
 }
 .particles_bg_home_red{
+    position: relative;
+    z-index: -20;
 background-image: url(../image/bg_red.jpg);
 background-size: cover;
+    background-attachment: fixed;
 background-position: center bottom;
 background-repeat: no-repeat; 
 }
@@ -917,8 +921,9 @@ background-repeat: no-repeat;
     margin: auto;
      background-image: url(../image/img_about/vignette.png);
     background-repeat: no-repeat;
-    background-size: 500px;
-     background-position: 78% 100px;
+    background-size: 700px;
+     background-position: 74% 0%;
+
 }
 .home_form .container_forms .wrapper{
     height: 90%;
@@ -939,7 +944,7 @@ height: 480px;
 .zag_form{
     color: #fff;
     width: 400px;
-    font-size: 2.5em; 
+    font-size: 2.2em; 
     text-align: left;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3),-2px -2px 5px rgba(0,0,0,0.3);
 }
@@ -1144,6 +1149,86 @@ width: 90%;
     background: #122b5b;
 }
 /**=======================
+* .      paginaciya
+==========================**/
+.paginator {
+    width: 100%;
+   display: flex;
+
+/*    padding-bottom: 4rem;*/
+    margin-bottom: 4rem;
+    
+}
+.paginator > ul{
+    width: 100%;
+      display: flex; 
+       justify-content:space-between;
+    }
+.paginator > ul > li > a,
+.paginator > ul > li > span,
+.pagination .fa,
+.paginator > ul > li
+ {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 14px;
+    width: 25px;
+    height: 23px;
+    color: #4d4d4d;
+     cursor: pointer;
+     margin: 0 1px;
+}
+.pagination .fa{
+     background: #d4d4d4;
+}
+.paginator > ul > li:first-child{
+     display: flex;
+    justify-content: flex-start;
+    flex: 9 0 auto;
+
+}
+.paginator > ul > li:last-child{
+    display: flex;
+    justify-content: flex-end;
+    flex: 9 1 auto;
+}
+.paginator .prev {  margin-right: 5px;
+}
+
+.paginator .next {margin-left: 5px;
+}
+
+.pagination > li .current
+
+{
+    background-color:#ff3e45;
+    color: #fff;
+}
+
+.pagination .disabled {
+    opacity: 0.3;
+   
+}
+.paginator > ul > li:last-child > a:hover{
+    
+}
+.paginator a:hover,
+.paginator .fa:hover {
+    background-color: #ff3e45;
+    color: #fff;
+}
+.paginator > ul > li:last-child:hover,
+.paginator > ul > li:first-child:hover{
+    color: #ff3e45
+}
+.paginator > ul > li:last-child:hover a > .fa,
+.paginator > ul > li:first-child:hover a > .fa
+{
+    background-color: #ff3e45;
+    color: #fff;
+}
+/**=======================
 * Submenu
 ==========================**/
 .submenu {
@@ -1163,12 +1248,12 @@ width: 90%;
 }
 .our_production{
     flex-flow: column;
-    margin: 4rem auto;
+/*    margin: 4rem auto;*/
 }
 .content_production,.good_inner{
     display: flex;
     flex-flow:row wrap;
-    padding: 1rem 0 8rem;
+    padding: 1rem 0 4rem;
 }
 .wrapper_popup_form h4{
     text-transform: uppercase;
@@ -2564,7 +2649,8 @@ border-bottom: 1px solid #ff3e45;
 .contacts_map ul li{
     padding: 0.4rem 0;
     width: 100%;
-    font-size: 0.9rem
+    font-size: 0.9rem;
+     background-position: 
    
 }
 .contacts_map ul{
@@ -2635,3 +2721,12 @@ border-bottom: 1px solid #ff3e45;
     width: 50%;
     }
 } 
+    
+    
+
+    
+    
+    
+    
+    
+    
