@@ -581,14 +581,6 @@ margin: auto auto;
    grid-row-end: 4;
 
 }
-/*
-.dotos__svg img{
-    width: 100%;
-    height: 100%;
-}
-*/
-
-
 .icon__Production{
    top:0;
     left:48px;
@@ -609,7 +601,6 @@ margin: auto auto;
   bottom: 0;
     left:326px;
 }
-
 .fotos_Production,
 .fotos_Command,
 .fotos_Programs,
@@ -1653,7 +1644,7 @@ footer .fa{
 .wrapper,
     .container_forms .wrapper,
     {
-    width: 70%;
+    width: 50%;
   }
     .footer .wrapper{
         width: 80%;
@@ -1666,8 +1657,10 @@ footer .fa{
 }
 
 @media (max-width: 1280px) {
-	
-    .wrapper,
+    .wrapper{
+       width: 80%;  
+    }
+    
     .container_forms .wrapper{
     width: 90%;
    }
