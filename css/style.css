@@ -30,7 +30,7 @@ li{
 html,body{ 
 	width:100%;
     margin-top: 45px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
@@ -435,6 +435,7 @@ background-repeat: no-repeat;
    justify-content: flex-end; 
 }
 .btn_left{
+    display: flex;
    justify-content: flex-start; 
 }
 .btn_s{
@@ -725,8 +726,7 @@ margin: auto auto;
                        Компании «СисЭйТи»
    ========================================================================== */
 .particles_home{
-   margin: 8rem auto 6rem;
-    padding-top: 7rem;
+    padding: 7rem 0 3rem;
 }
 .particles_home + .btn_left{
     margin-bottom: 3rem;
@@ -738,9 +738,9 @@ margin: auto auto;
 }
 .particles_home p{
    margin-bottom: 20px;
-   padding-right: 50px;
+   padding-right: 20px;
     color: #fff;
-    width: 90%;
+  
 }
 .mac_book{
     display: flex;
@@ -975,10 +975,10 @@ height: 480px;
 }
 .entry_input{
     padding-left: 15px;
-    margin: 0 10px;
     box-sizing: border-box;
-    height: 50px;
-    width: 250px;
+    margin: 0 10px;
+    height: 40px;
+    min-width: 240px;
     border-radius: 3px;
     margin-bottom: 20px;
     box-shadow :2px 2px 5px rgba(0,0,0,0.3),-2px -2px 5px rgba(0,0,0,0.3); 
@@ -989,7 +989,7 @@ height: 480px;
      color: #fff;
     background: #ff3e45;
     border-radius: 50px;
-    margin-right: 0;
+/*    margin-right: 0;*/
      text-align: center;
     padding:0;
 }
@@ -1385,14 +1385,8 @@ background: -ms-linear-gradient(299deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 10
     font-weight: 600;
     color: #4d4d4d;
 }
-.btn__projects:before{
- content: "→";
-    
-	position: absolute;
-	left: 9rem;
-    font-size: 20px;
-    line-height: 18px;
-    font-size: 1.5em
+.btn__projects .fa{
+margin-left: 10px;
 }
 .wrapper__projects:hover .btn__projects{
     color:#ff3e45 
@@ -2353,7 +2347,9 @@ border-bottom: 2px solid #ff3e45;
 .sf-menu > li > ul > li > .sf-with-ul {
   position: relative;
 }
-
+.sf-menu li:nth-child(2) .fa{
+    margin-left: 3px;
+}
 
 @media (max-width: 767px) {
   .sf-menu {
@@ -2444,7 +2440,11 @@ border-bottom: 1px solid #ff3e45;
   transition: 0.5s all ease;
   background: rgba(0, 0, 0, 0.1);
 }
-
+.rd-mobilemenu_ul a .fa{
+    position: absolute;
+    top: 13px;
+    right: 50px;
+}
 .rd-mobilemenu_ul a.rd-with-ul {
   position: relative;
 }
@@ -2626,6 +2626,9 @@ border-bottom: 1px solid #ff3e45;
     background: #ff3e45;
     box-shadow: 1px 2px 2px rgba(255,62,69,.6),-1px -2px 2px rgba(255,62,69,.6);
 }
+.contacts_map a{
+   border-bottom: 1px solid 
+}
 .contacts_map .wrapper{
     justify-content: space-between;
   
@@ -2633,7 +2636,6 @@ border-bottom: 1px solid #ff3e45;
 }
 .contacts_map .wrapper .col{
    min-width: 270px;
-/*    flex: 1 1 calc(50% 270px);*/
 }
 .contacts_map .wrapper .col:first-child{
     flex: 4;
@@ -2650,8 +2652,32 @@ border-bottom: 1px solid #ff3e45;
     padding: 0.4rem 0;
     width: 100%;
     font-size: 0.9rem;
-     background-position: 
-   
+    position: relative;
+}
+.contacts_map .col:first-child ul li i{
+       border-radius:13px;
+    color: #fff;
+    background-color: #122b5b;
+    margin-right: 10px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+.contacts_map .col:last-child  ul li i{
+    position: absolute;
+    left: -50px;
+    border-radius:13px;
+    color: #fff;
+    background-color: #122b5b;
+
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+.contacts_map .col:last-child  ul:last-child{
+    padding-top: 60px;
 }
 .contacts_map ul{
     margin: 2rem 0;
