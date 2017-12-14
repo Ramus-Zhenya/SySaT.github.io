@@ -1040,8 +1040,7 @@ height: 480px;
     width: 80%;
 }
 .service{
-    margin: 12.5em auto 6.2em;
-    padding-top: 10rem;
+    padding: 10rem 0 6rem;
 }
 .service > .col:first-child{
    display: flex; 
@@ -1640,9 +1639,9 @@ footer .fa{
 
 }
 /*===============================================*/
-@media only screen and (max-width: 1440px) {
-.wrapper,
-    .container_forms .wrapper,
+@media only screen and  (max-width: 1440px) {
+    
+    .wrapper
     {
     width: 50%;
   }
@@ -1658,7 +1657,7 @@ footer .fa{
 
 @media only screen and (max-width: 1280px) {
     .wrapper{
-       width: 80%;  
+       width: 70%;  
     }
     
     .container_forms .wrapper{
