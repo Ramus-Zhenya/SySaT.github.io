@@ -29,7 +29,7 @@ li{
 
 html,body{ 
 	width:100%;
-    margin-top: 45px;
+    margin-top: 40px;
     font-size: 14px;
 }
 
@@ -40,25 +40,7 @@ body{
     
  
 }
-.sys1{
-    font-size: 9rem;
-    padding: 0;
-    color: #fff;
-    font-family: 'Noto Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing:8px;
-}
 
-.sys1 > span:nth-child(n+4){color: #ff3e45;}
-.zag1{
-    color: #fff;
-    width:500px;
-    margin:1rem auto;
-    font-family: 'Open Sans', sans-serif;
-    font-weight:400;
-    font-size: 1.2rem;
-
-}
 h3,h4{
    color: #122b5b; 
 }
@@ -80,6 +62,25 @@ h2{
     font-size: 2.5rem;
     color: #122b5b;
     margin: auto;
+}
+.sys1{
+    font-size: 9rem;
+    padding: 0;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing:8px;
+}
+
+.sys1 > span:nth-child(n+4){color: #ff3e45;}
+.zag1{
+    color: #fff;
+    width:550px;
+    margin:1rem auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    font-size: 1.8rem;
+
 }
 .zag2{
     padding: 2rem 0;
@@ -1668,13 +1669,13 @@ footer .fa{
 	
     .wrapper,
     .container_forms .wrapper{
-    width: 80%;
+    width: 90%;
    }
     .service > .col{
         min-width: 500px;
     }
     .zag1{
-     width: 90%;
+     width: 60%;
      margin:.5rem auto;
   }
     .sys1{
