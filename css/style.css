@@ -1406,10 +1406,9 @@ box-sizing: border-box;
 .certificates{
     position: relative;
 }
-.certificates .wrapper{
-    padding: 0rem 0 4rem;
+.certificates .wrapper {
     flex-flow: column;
-    margin: 3rem auto;
+    margin: 2rem auto 1rem;
 }
 .wrapper_docs{
  border-top:1px solid #d4d4d4;
@@ -1418,17 +1417,21 @@ box-sizing: border-box;
     text-align: center;
     width: 100%;
 }
+.wrapper_docs a{
+    display: block;
+}
 .item_docs{
     float: left;
     clear: right;
-    margin: 5px;
-    width: 275px;
-    height: 380px;
+    width: calc(25% - 20px);
+    margin: 10px;
    display: inline-block;
+
 }
-item_docs img{
-  
+.item_docs img{
+    width: 100%; 
     object-fit: cover;
+       border: 1px solid #cdcdcd;
 }
 .certificates > .wrapper > .zag3{
    text-align: center;
@@ -1818,11 +1821,7 @@ footer{
     .footer > .wrapper{
         width: 80%;
     }
-    .wrapper_docs{
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-    }
+
     
 
 }
@@ -1840,6 +1839,7 @@ footer{
     .home_form .container_forms .wrapper,
     .bg__red > .wrapper{
     height: 100%;
+        width: 90%;
     }
     .form_wrapper{
     justify-content: center;
@@ -1919,7 +1919,7 @@ footer{
      }
     .certificates > .wrapper > .zag3{
         text-align: center;
-        padding: 2rem 0;
+        padding:0 0 1rem 0;
         font-size: 1rem;
 }
     .good_inner .col:first-child{
@@ -1972,6 +1972,10 @@ footer{
     .news__compony + .btn_right{
         width: 80%;
     }
+        .certificates > .wrapper > .zag3{
+        padding:0 1rev 1rem ;
+  
+}
     .news__compony{
          width: 80%;
      }
@@ -2139,11 +2143,23 @@ footer{
 /*                                 popup                               */
 /*=====================================================================*/
 .white-popup-block{
-    padding: 20px;
+/*    padding: 20px;*/
     
     
 }
-
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
 .zag_popup{
     color: #122b5b;
     font-weight: 700;
@@ -2533,6 +2549,9 @@ border-bottom: 1px solid #ff3e45;
     font-size: 1em;
            padding: 19px 20px 19px ;
   }
+    .rd-mobilepanel{
+        height: 53px;
+    }
 }
 /*==================  MAP  ======================*/
 #map{
