@@ -101,6 +101,7 @@ h2{
     background: #fff;
     position: relative;
     z-index: 1;
+    padding-bottom: 30px;
 }
 .container{
   
@@ -771,8 +772,7 @@ margin: auto auto;
    margin-bottom: 6.2rem;
 }
 .container__new{
-    flex: 1 1 calc(10% );
-    margin: 10px;
+    width: calc(25% - 10px);
 }
 .wrapper__new{
     border-radius: 5px;
@@ -845,46 +845,6 @@ margin: auto auto;
 /*============================================================================*/
 /*                              partners_home end                             */
 /*============================================================================*/
-.container_map{
-    margin-top: -100px;
-    position: relative;
-     height: 44rem;
-/*    height: 760px;*/
-}
-.container_map .wrapper{
-    position: relative;
-     height: 100%;
-    align-items: flex-end;
-    flex-flow: row;
-    
-}
-.container_map .sys1{
-    font-size: 6em;
-}
-.map_capcha{
-    align-self: flex-start;
-    margin-top: 7rem
-    
-}
-.map_capcha p{
-    color: #fff;
-    width: 50%;
-    font-size: 1em;
-}
-.map{
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    width: 80%;
-    bottom: 2rem
-    
-}
-.map img{
-    width: 100%;
-}
-/*=========================================================*/
-/*                           forms                         */
-/*=========================================================*/
 /*============================================================================*/
 /*                               home_form                                 */
 /*============================================================================*/
@@ -902,8 +862,6 @@ background-size: cover;
 background-position: center bottom;
 background-repeat: no-repeat; 
 }
-
-
 .home_form > .container_forms,
 .container_forms_footer{
     position: relative;
@@ -916,13 +874,18 @@ background-repeat: no-repeat;
     height: 480px;
 
 }
-.home_form > .container_forms > .wrapper,
-.bg__red > .wrapper{
+.home_form > .container_forms > .wrapper{
     flex-flow: column;
     height: 90%;
     width: 50%;
     justify-content: flex-end;
 
+}
+.bg__red > .wrapper{
+    flex-flow: column;
+    height: 90%;
+    width: 60%;
+    justify-content: flex-end;
 }
 /*============================================================================*/
 .container_forms_footer{
@@ -963,7 +926,6 @@ height: 480px;
      color: #fff;
     background: #ff3e45;
     border-radius: 50px;
-/*    margin-right: 0;*/
      text-align: center;
     padding:0;
 }
@@ -1550,6 +1512,46 @@ flex: 1;
 /*======================================================================*/
 /*                             продукция inner  end                     */
 /*======================================================================*/
+.container_map{
+    margin-top: -100px;
+    position: relative;
+    height: 45vw;
+    
+}
+.map{
+   width: 100%;
+    height: 100%;
+    background-image: url(../image/Map.png);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: 65% 70%;
+}
+.container_map > .map >.wrapper{
+    
+    flex-flow: row;
+    width: 60%;
+}
+.container_map .sys1{
+    font-size: 6em;
+}
+.map_capcha{
+   margin-top: 10vw;
+    
+}
+.map_capcha > .sys1{
+    font-size: 5vw;
+}
+.map_capcha p{
+    color: #fff;
+    width: 50%;
+    font-size: 1em;
+}
+
+.map img{
+    width: 100%;
+}
+
+
 .projects__inner > .projects{
     padding: 1rem 0 9rem;
 }
@@ -1595,10 +1597,10 @@ footer{
     .footer .wrapper{
     width: 60%;
     }
-    .home_form > .container_forms > .wrapper,
-    .bg__red > .wrapper{
-    width: 70%;
+    .home_form > .container_forms > .wrapper{
+    width: 50%;
 }
+
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1606,11 +1608,15 @@ footer{
        width: 60%;  
     }
     .home_form > .container_forms > .wrapper{
-    width: 70%; 
+    width: 60%; 
     }
     .bg__red > .wrapper{
-    width: 80%;
+    width: 70%;
    }
+    .container_map > .map > .wrapper{
+     width: 72%;   
+    }
+ 
     .footer .wrapper{
         width: 70%;
     }
@@ -1625,6 +1631,7 @@ footer{
         font-size: 6em;
        line-height: 1em;
     }
+    
     .btn{
     width: 40%;
     padding:0.6rem 0rem 0.5rem;
@@ -1643,7 +1650,7 @@ footer{
         min-width: 350px;
     }
     .container__new{
-        flex: 1 1 calc(33%);
+    width: calc(50% - 10px);
 }
     .container__new:nth-child(2){
     order: 3;
@@ -1660,12 +1667,25 @@ footer{
     .container__projects {
     flex: 1 1 calc(35%);
     }
+    .bg__red > .wrapper > .form_wrapper > .entry_input{
+    margin-bottom: 20px;
+    height: 40px;
+    width: calc(50% - 10px);  
+    }
+    .home_form > .container_forms > .wrapper > .form_wrapper .entry_input{
+    margin-bottom: 20px;
+    height: 40px;
+    width: calc(50% - 10px);   
+    }
 
 }
     
 @media only screen and (max-width: 980px){
     .wrapper{
     width: 70%;
+    }
+        .container_map > .map > .wrapper{
+     width: 82%;   
     }
     .titel__page{
         display: none;
@@ -1683,23 +1703,19 @@ footer{
     .bg__red > .wrapper > p{
         margin:15px 0;
     }
-    .home_form > .container_forms > .wrapper,
-    .bg__red > .wrapper{
-    height: 100%;
-    }
-    .home_form > .container_forms > .wrapper > .form_wrapper .entry_input{
-    margin-bottom: 20px;
-    height: 40px;
-    width: calc(50% - 10px);   
-    }
-    .bg__red > .wrapper > .form_wrapper > .entry_input{
-    margin-bottom: 20px;
-    height: 40px;
-    width: calc(50% - 10px);  
-    }
     .sys1{
         font-size: 4em;
        line-height: 1em;
+    }
+        .container_map{
+      height: 30rem;  
+    }
+    .map{
+    background-position: 63% 93%;
+        background-size: 48%;
+}
+    .map_capcha p{
+        width: 35%;
     }
     .dotos__svg{
         display: none;
@@ -1817,6 +1833,9 @@ footer{
     .wrapper{
     width: 80%;
     }
+            .container_map > .map > .wrapper{
+     width: 92%;   
+    }
     .news__compony{
          width: 60%;
      }
@@ -1850,11 +1869,18 @@ footer{
     .container__new{
        flex: 1 1 calc(55%);
     }
-    .container_map{
-      height: 22rem;  
+    .map{
+    background-position: 63% 93%;
+        background-size: 300px;
+}
+    .map_capcha{
+        margin-top: 7rem;
+    }
+    .map_capcha > .sys1{
+        font-size: 3rem;
     }
     .map_capcha p{
-        text-shadow: 1px 1px 1px #000,1px -1px 1px #000;
+
         width: 100%;
     }
     .head__btn__wrap{
@@ -2063,6 +2089,10 @@ footer{
     .thumbs a{
     height: 70px;
     }
+    .map_capcha > .sys1{
+        margin: 30px 0 5px;
+        padding: 0;
+    }
 }
     
 @media only screen and (max-width: 320px){
@@ -2099,6 +2129,8 @@ footer{
         }
         
 }
+
+
 /*=====================================================================*/
 /*                                 popup                               */
 /*=====================================================================*/
