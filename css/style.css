@@ -277,7 +277,7 @@ background-repeat: no-repeat;
 .Headre_pic:before{
     content: "";
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     top: 0%;
     right: 15%;
     width: 100%;
@@ -1658,6 +1658,9 @@ footer{
     height: 40px;
     width: calc(50% - 10px);   
     }
+    .contacts_map .wrapper{
+        width: 90%;
+    }
 
 }
 
@@ -1743,6 +1746,9 @@ border:none;
         min-width: 100%;
    
 }
+    .sliderBullets{
+        bottom: 20px;
+    }
     .all_news .container_all_new{
     width: 33.3%;
 
@@ -1813,7 +1819,6 @@ border:none;
     }
     .Headre_pic .wrapper{
     height: 280px;
-/*    justify-content:space-around;     */
 }
     .sl__img > img{
     width: 100%;
@@ -1828,7 +1833,6 @@ border:none;
         padding-top: 30px; }
     .zag1{
         font-size: 20px;
-/*        padding-bottom: 30px;*/
   }
     .footer> ul > li{
         min-width: 300px; 
@@ -2012,6 +2016,12 @@ border:none;
     .good_inner > .col > article > div > p{
         margin-bottom: 10px;
 }
+    .contacts_map .wrapper{
+        width: 60%
+    }
+    .contacts_map .wrapper .col{
+        margin: 3rem auto;
+    }
 }   
     
 @media only screen and (max-width: 440px){
@@ -2617,11 +2627,10 @@ border-bottom: 1px solid #ff3e45;
     overflow: hidden;
 	align-self: flex-end;
 	box-sizing: border-box; 
-	width: 100%;
+	width: 120%;
 	height: 760px;
-    margin:0 auto;
-    top: 0
-    position: absolute;
+    margin:0 0 0 8%;
+
 }
 [class*="ymaps-2"][class*="-ground-pane"] {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
@@ -2633,7 +2642,7 @@ border-bottom: 1px solid #ff3e45;
 
 .form_wrapper_map{
    position: absolute;
-    top: 30%;
+    top: 20%;
     left: 25%;
  
     background: #fff;
@@ -2664,6 +2673,7 @@ border-bottom: 1px solid #ff3e45;
     border-radius: 25px;
     color: #fff;
     background: #ff3e45;
+    cursor: pointer;
     box-shadow: 1px 2px 2px rgba(255,62,69,.6),-1px -2px 2px rgba(255,62,69,.6);
 }
 .contacts_map a{
@@ -2671,17 +2681,19 @@ border-bottom: 1px solid #ff3e45;
 }
 .contacts_map .wrapper{
     justify-content: space-between;
-  
+/*  width: 90%;*/
     margin: 3rem auto;
 }
 .contacts_map .wrapper .col{
+    width: 50%;
    min-width: 270px;
 }
 .contacts_map .wrapper .col:first-child{
-    flex: 4;
+/*    flex: 4;*/
 }
 .contacts_map .wrapper .col:last-child{
-    flex: 2;
+/*    flex: 1;*/
+    padding-left: 50px;
 }
 .contacts_map ul li:first-child {
     font-weight: 700;
