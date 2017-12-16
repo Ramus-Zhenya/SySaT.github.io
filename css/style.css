@@ -58,7 +58,7 @@ h3,h4{
     text-transform: uppercase;
     color: #122b5b;
 }
-h2{
+h2,h1{
     font-size: 2.5rem;
     color: #122b5b;
     margin: auto;
@@ -101,7 +101,7 @@ h2{
     background: #fff;
     position: relative;
     z-index: 1;
-    padding-bottom: 2rem;
+/*    padding-bottom: 2rem;*/
 }
 .container{
   
@@ -374,6 +374,31 @@ background-repeat: no-repeat;
     left: 7%;
 
 }
+.inner__news:before{
+    content: "";
+    position: absolute;
+    background-image: url(../image/circle.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right top;
+    width: 100%;
+    height: 100%;
+    top: 15%;
+    left: 7%;
+
+}
+.inner__news:after{
+    content: "";
+    position: absolute;
+    background-image: url(../image/circle.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: left center;
+    width: 100%;
+    height: 100%;
+    bottom: -20%;
+    left: -7%;
+} 
 .bg__blue{
     margin-top: -100px;
 
@@ -466,17 +491,103 @@ background-repeat: no-repeat;
     z-index: -20;
     height: 28vw;
 }
-/*
-.sl__img{
-    width: 100%;
+.slider {
+width:100%;
+height:28vw;
+position:relative;
 }
-*/
-/*
-.sl__img > img{
+.slider2{
+ width:100%;
+    height:28vw;
+position:relative;
+}
+
+.sliderContent {
+float:left;
+width:100%;
+height:28vw;
+clear:both;
+position:relative;
+overflow:hidden;
+}
+.slider2 > .sliderContent{
+float:left;
+width:100%;
+   height:100%;
+clear:both;
+position:relative;
+overflow:hidden;
+}
+.sliderContent > .sl__img {
+position:absolute;
+width:100%;
+height:28vw;
+background:#fff;
+}
+.slider2 > .sliderContent > .sl__img{
+   position:absolute;
+width:100%;
+height:100%;
+background:#fff; 
+}
+.sliderContent > .sl__img img{
     width: 100%;
+  object-fit: cover;
+}
+.slider2 > .sliderContent > .sl__img img{
+       width: 100%;
+   height: 100%;
+    object-fit: cover 
+} 
+.sliderBullets {
+position:absolute;
+bottom:10px;
+left:50%;
+z-index:50;
+margin-left:-45px;
+}
+.slider2 .sliderBullets{
+   position:absolute;
+bottom:-30px;
+left:50%;
+z-index:150;
+margin-left:-45px; 
+}
+.sliderBullets a {
+display:block;
+float:left;
+text-indent:-9999px;
+outline:none;
+margin-left:10px;
+width:15px;
+height:15px;
+    border-radius: 50%;
+border: 1px solid #fff;
+}
+.slider2 .sliderBullets a{
+   border: 1px solid #2d78b2; 
+}
+.sliderBullets .activ {
+    background: #2d78b2;
 
 }
-*/
+.slider2 .sliderBullets .activ {
+    background: rgba(31,70,134,.6);
+
+}
+
+.sliderContent a {
+outline:none;
+}
+
+a {
+color:#fff;
+}
+
+a img {
+border:none;
+}
+
 
 .Headre_pic{
 	position:relative;
@@ -703,7 +814,8 @@ margin: auto auto;
                        Компании «СисЭйТи»
    ========================================================================== */
 .particles_home{
-    padding: 7rem 0 3rem;
+    padding: 9rem 0 3rem;
+    position: relative;
 }
 .particles_home + .btn_left{
     margin-bottom: 3rem;
@@ -721,7 +833,7 @@ margin: auto auto;
 }
 .mac_book{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 .mac_book img{
     min-width: 300px;
@@ -1342,6 +1454,43 @@ margin: 3rem -1%;
 /*======================================================================*/
 /*                              НОВОСТИ    end                          */
 /*======================================================================*/
+.container_inner_new{
+    margin: 3rem 0 4rem;
+}
+/*
+.container_inner_new .zag2{
+    font-size: 2.5rem;
+    color: #122b5b;
+    margin: auto; 
+}
+*/
+.jpeg_inner_new{
+    width: 100%
+}
+.jpeg_inner_new img{
+    width: 100%;
+    object-fit: cover;
+}
+.wrapper_inner_new{
+  margin-top: 2rem;   
+}
+.sliderBullets {
+position:absolute;
+bottom:10px;
+left:50%;
+z-index:50;
+margin-left:-45px;
+}
+.new_inner{
+    margin: 6rem 0 4rem;
+    border-bottom: 1px solid #d4d4d4;
+}
+.new_inner .zag2{
+        font-size: 1.8rem;
+    }
+.new_inner p{
+    margin: 2rem 0;
+}
 /*======================================================================*/
 /*                                 партнеры                             */
 /*======================================================================*/
@@ -1506,6 +1655,8 @@ flex: 1;
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 70% 70%;
+    position: relative;
+    z-index: -5;
 }
 .container_map > .map >.wrapper{
     
@@ -1605,6 +1756,13 @@ footer{
     .service > .col{
         min-width: 500px;
     }
+    h1{
+        font-size:2rem;
+    }
+    .new_inner .zag2{
+        font-size: 1.5rem;
+    }
+    
     .zag1{
      width: 550px;
      margin:.5rem auto;
@@ -1661,73 +1819,12 @@ footer{
     .contacts_map .wrapper{
         width: 90%;
     }
+    .service > .col:first-child{
+        flex-flow: row;
+    }
 
 }
 
-
-.slider {
-width:100%;
-height:28vw;
-position:relative;
-}
-
-.sliderContent {
-float:left;
-width:100%;
-height:28vw;
-clear:both;
-position:relative;
-overflow:hidden;
-}
-
-.sliderContent .sl__img {
-position:absolute;
-width:100%;
-height:28vw;
-background:#fff;
-}
-.sliderContent .sl__img img{
-    width: 100%;
-    object-fit: cover;
-}
-
-.sliderBullets {
-position:absolute;
-bottom:10px;
-left:50%;
-z-index:50;
-margin-left:-45px;
-}
-
-.sliderBullets a {
-display:block;
-float:left;
-text-indent:-9999px;
-outline:none;
-margin-left:10px;
-width:15px;
-height:15px;
-    border-radius: 50%;
-border: 1px solid #fff;
-}
-
-.sliderBullets .activ {
-/*background-position:0 -12px;*/
-    background: #2d78b2;
-
-}
-
-.sliderContent a {
-outline:none;
-}
-
-a {
-color:#fff;
-}
-
-a img {
-border:none;
-}
 
 
     
@@ -1746,6 +1843,12 @@ border:none;
         min-width: 100%;
    
 }
+    h1{
+        font-size: 1.5rem;
+    }
+    .new_inner .zag2{
+        font-size: 1.2rem;
+    }
     .sliderBullets{
         bottom: 20px;
     }
@@ -1889,13 +1992,16 @@ border:none;
     .news__compony{
          width: 60%;
      }
-    .home_form .container_forms .wrapper,
+/*    .home_form .container_forms .wrapper,*/
     .bg__red > .wrapper{
     height: 100%;
-        width: 90%;
+ 
     }
     .form_wrapper{
     justify-content: center;
+    }
+    .home_form > .container_forms > .wrapper{
+        height: 100%;
     }
     .home_form > .container_forms > .wrapper > .form_wrapper .entry_input{
     width:270px;   
@@ -1904,8 +2010,9 @@ border:none;
     width:257px;  
     }
     .zag_form{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
+        width: 100%;
 }
     .zag1{
         width: 420px;
@@ -1914,8 +2021,8 @@ border:none;
     .home_form > .container_forms > .wrapper > p,
     .bg__red > .wrapper > p{
     text-align: center;
-    margin:15px auto;
-    width: 75%;
+    margin:12px auto;
+    width: 100%;
     font-size: 14px;
     }
      h2{
@@ -2039,13 +2146,17 @@ border:none;
         padding:0 1rev 1rem ;
   
 }
+    .bg__red > .wrapper{
+ width: 90%;
+ 
+    }
     .news__compony{
          width: 80%;
      }
     .col{
     justify-content: center;
     flex:0 0;
-    min-width: 280px;
+    width: 90%;
     }
     .service > .col{
     min-width: 300px;
@@ -2141,9 +2252,13 @@ border:none;
     width: 100%;
     font-size: 1rem;
     }
+    .home_form > .container_forms > .wrapper{
+        width: 90%;
+    }
     .home_form > .container_forms > .wrapper > p,
     .bg__red > .wrapper > p{
-    width: 100%;
+
+        width: 80%;
     }
     .Our_services .wrapper .col,
     .service .col{
@@ -2191,7 +2306,7 @@ border:none;
     }
     .zag1{
     width: 100%;
-    margin:0rem auto 20px;
+    margin:0rem auto 17px;
     font-size: 14px;
     
 }
@@ -2618,9 +2733,7 @@ border-bottom: 1px solid #ff3e45;
     font-size: 1em;
            padding: 19px 20px 19px ;
   }
-    .rd-mobilepanel{
-        height: 53px;
-    }
+
 }
 /*==================  MAP  ======================*/
 #map{

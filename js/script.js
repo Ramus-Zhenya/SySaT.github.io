@@ -116,6 +116,13 @@ $(document).ready(function() {
 		autoplaySpeed: 3000,
 		arrowsHide: false
 	});
+
+	$('.slider2').mobilyslider({
+		transition: 'fade',
+		animationSpeed: 800,
+		bullets: true,
+		arrowsHide: false
+	});
 //====================================================================
 var nav = document.getElementsByClassName('stuck_container')[0];
 var prevPos = window.scrollY;
