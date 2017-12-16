@@ -100,7 +100,7 @@ h2,h1{
     margin-right: -10%;
     background: #fff;
     position: relative;
-    z-index: 1;
+    z-index: 10;
 /*    padding-bottom: 2rem;*/
 }
 .container{
@@ -198,7 +198,7 @@ background-repeat: no-repeat;
 }
 /* =============================================================================*/
 .bg__bcg1{
-    height: 22vw;
+    height: 27vw;
 }
 .bg__bcg1:after{
     content: "";
@@ -1968,6 +1968,9 @@ footer{
     .footer > .wrapper{
         width: 80%;
     }
+    .all_projects{
+        padding: 3rem 0 4rem;
+    }
 
     
 
@@ -1983,6 +1986,9 @@ footer{
     }
 }   
 @media only screen and (max-width: 660px){
+    .bg__bcg1{
+/*    height: 150px;*/
+}
     .wrapper{
     width: 80%;
     }
@@ -2092,6 +2098,9 @@ footer{
          flex-flow: column;
 
 }
+    .container_inner_new {
+    margin: 0rem 0 0rem;
+}
     .thumbs{
          flex-flow: row;
          order: 2;
@@ -2129,6 +2138,10 @@ footer{
     .contacts_map .wrapper .col{
         margin: 3rem auto;
     }
+    .partners_home{
+    padding-bottom: 2rem;
+}
+    
 }   
     
 @media only screen and (max-width: 440px){
@@ -2188,7 +2201,7 @@ footer{
     .footer > ul > li:nth-child(3){order: 2}
     .footer > ul > li:nth-child(4){order: 1}
     .Headre_pic{
-       height: 230px;  
+       height: 220px;  
     }
     .Headre_pic .wrapper{
     height: 230px;
@@ -2218,8 +2231,8 @@ footer{
     color: #fff;
 }
     .sys1{
-    font-size: 5em;
-    margin: 30px auto 7vw;
+    font-size: 4em;
+    margin: 22px auto 7vw;
     padding-top: 0px;
     }
     .zag1{
@@ -2279,6 +2292,22 @@ footer{
         margin: 30px 0 5px;
         padding: 0;
     }
+    .all_news .container_all_new {
+        min-width: 260px;
+    }
+    .pagination li:nth-child(10),
+    .pagination li:nth-child(9),
+    .pagination li:nth-child(8),
+    .pagination li:nth-child(5){
+      display: none;
+    }
+    .paginator > ul > li:first-child {
+    flex: 18 0 auto;
+}
+  .paginator > ul > li:last-child {
+    flex: 20 0 auto;
+} 
+  
 }
     
 @media only screen and (max-width: 320px){
@@ -2872,6 +2901,11 @@ border-bottom: 1px solid #ff3e45;
     left: 20%;
     }
 }
+
+
+
+
+
 @media only screen and (min-width: 320px) {
     .our_partners {
             width: 80%;
