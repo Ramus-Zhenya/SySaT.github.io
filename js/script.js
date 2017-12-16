@@ -108,7 +108,14 @@ $(document).ready(function() {
 //}
 
 //====================================================================
-
+	$('.slider3').mobilyslider({
+		transition: 'fade',
+		animationSpeed: 800,
+		bullets: true,
+        autoplay: true,
+		autoplaySpeed: 3000,
+		arrowsHide: false
+	});
 //====================================================================
 var nav = document.getElementsByClassName('stuck_container')[0];
 var prevPos = window.scrollY;
