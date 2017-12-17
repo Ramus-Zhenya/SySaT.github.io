@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 400 350" style="enable-background:new 0 0 400 350;" xml:space="preserve">
+	 viewBox="0 0 380 380" style="enable-background:new 0 0 380 380;" xml:space="preserve">
 <style type="text/css">
 	.st0{opacity:0.5;fill:none;stroke:#de7b83;stroke-miterlimit:10;enable-background:new;}
 	.st1{opacity:0.7;fill:none;stroke:#de7b83;stroke-miterlimit:10;enable-background:new;}
@@ -9,14 +9,14 @@
 	.st3{fill:none;stroke:#de7b83;stroke-miterlimit:10;}
 	.st4{fill:#cc333a;stroke:#de7b83;stroke-width:3;stroke-miterlimit:10;}
 </style>
-<path id="motionPath" class="st0" d="M200,350L200,350c-96.7,0-175-78.3-175-175l0,0C25,78.3,103.3,0,200,0l0,0
-	c96.7,0,175,78.3,175,175l0,0C375,271.7,296.7,350,200,350z"/>
-<path id="motionPath1" class="st1" d="M200,315L200,315c-77.3,0-140-62.7-140-140l0,0c0-77.3,62.7-140,140-140l0,0
-	c77.4,0,140,62.7,140,140l0,0C340,252.3,277.4,315,200,315z"/>
-<path id="motionPath2" class="st2" d="M200,276.5L200,276.5c-56.1,0-101.5-45.4-101.5-101.5l0,0c0-56.1,45.4-101.5,101.5-101.5l0,0
-	c56.1,0,101.5,45.4,101.5,101.5l0,0C301.5,231.1,256.1,276.5,200,276.5z"/>
-<path id="motionPath3" class="st3" d="M200,242.4L200,242.4c-37.2,0-67.4-30.2-67.4-67.4l0,0c0-37.2,30.2-67.4,67.4-67.4l0,0
-	c37.2,0,67.4,30.2,67.4,67.4l0,0C267.4,212.2,237.2,242.4,200,242.4z"/>
+<path id="motionPath" class="st0" d="M190,365L190,365c-96.7,0-175-78.3-175-175l0,0C15,93.3,93.3,15,190,15l0,0
+	c96.7,0,175,78.3,175,175l0,0C365,286.7,286.7,365,190,365z"/>
+<path id="motionPath1" class="st1" d="M190,330L190,330c-77.3,0-140-62.7-140-140l0,0c0-77.3,62.7-140,140-140l0,0
+	c77.4,0,140,62.7,140,140l0,0C330,267.3,267.4,330,190,330z"/>
+<path id="motionPath2" class="st2" d="M190,291.5L190,291.5c-56.1,0-101.5-45.4-101.5-101.5l0,0c0-56.1,45.4-101.5,101.5-101.5l0,0
+	c56.1,0,101.5,45.4,101.5,101.5l0,0C291.5,246.1,246.1,291.5,190,291.5z"/>
+<path id="motionPath3" class="st2" d="M190,257.4L190,257.4c-37.2,0-67.4-30.2-67.4-67.4l0,0c0-37.2,30.2-67.4,67.4-67.4l0,0
+	c37.2,0,67.4,30.2,67.4,67.4l0,0C257.4,227.2,227.2,257.4,190,257.4z"/>
     
 <g id="circle">
 	<circle class="st4" cx="0" cy="0" r="6"/>
