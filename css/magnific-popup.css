@@ -52,7 +52,6 @@ background: #fff;
 
 .mfp-inline-holder .mfp-content,
 .mfp-ajax-holder .mfp-content {
-/*  width: 100%;*/
 
   cursor: auto; }
 
@@ -141,7 +140,7 @@ button::-moz-focus-inner {
   padding: 0 0 18px 10px;
   color: #FFF;
   font-style: normal;
-  font-size: 28px;
+  font-size: 40px;
   font-family: Arial, Baskerville, monospace; }
   .mfp-close:hover,
   .mfp-close:focus {
@@ -154,8 +153,9 @@ button::-moz-focus-inner {
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
-  color: #FFF;
-  right: -6px;
+  color: #fff;
+    top: -30px;
+  right: 3px;
   text-align: right;
   padding-right: 6px;
   width: 100%; }

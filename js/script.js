@@ -52,6 +52,8 @@ $(document).ready(function() {
 	});
 });
 
+
+
 //====================================================================
  $(function(){
 	var Accordion = function(el, multiple) {

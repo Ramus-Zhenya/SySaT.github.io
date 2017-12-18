@@ -6,10 +6,9 @@
   <meta name="description" content="">
  
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" media="screen" href="css/style.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
 </head>
 <body>
 <header class="stuck_container">
@@ -128,12 +127,11 @@
         </ul>
 </footer>
 
-<script src="js/jquery-3.1.1.min.js"></script>
+<!--<script src="js/jquery-3.1.1.min.js"></script>-->
 <script src="js/app.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.rd-navbar.js"></script>
-<script src="js/script.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
+<!--<script src="js/script.js"></script>-->
 <script src="https://api-maps.yandex.ru/2.1.17/?lang=ru_RU" type="text/javascript"></script>
 <script>
     ymaps.ready(function () {
@@ -170,43 +168,41 @@ myMap.controls.add('rulerControl', {
     scaleLine: false
 
         },
+
+                   
          {
             searchControlProvider: 'yandex#search'
         }),
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
 '<div style="color:#FFFFFF;font-weight:bold;">$[properties.iconContent]</div>'
         ),
-
-        myPlacemark = new ymaps.Placemark([54.224553,28.515545], {
+ myPolygon = new ymaps.Polygon([ [ [ 54.1639, 28.4740 ], [ 54.1698, 28.4706 ], [ 54.1726, 28.4658 ], [ 54.1762, 28.4586 ], [ 54.1790, 28.4524 ], [ 54.1853, 28.4654 ], [ 54.1881, 28.4716 ], [ 54.1923, 28.4726 ], [ 54.1969, 28.4699 ], [ 54.2040, 28.4689 ], [ 54.2159, 28.4682 ], [ 54.2209, 28.4664 ], [ 54.2283, 28.4634 ], [ 54.2318, 28.4634 ], [ 54.2438, 28.4496 ], [ 54.2517, 28.4737 ], [ 54.2478, 28.4761 ], [ 54.2454, 28.4792 ], [ 54.2442, 28.4826 ], [ 54.2466, 28.4836 ], [ 54.2486, 28.4877 ], [ 54.2480, 28.4908 ], [ 54.2454, 28.4936 ], [ 54.2424, 28.4967 ], [ 54.2380, 28.4973 ], [ 54.2358, 28.5004 ], [ 54.2338, 28.5028 ], [ 54.2328, 28.5076 ], [ 54.2320, 28.5135 ], [ 54.2310, 28.5176 ], [ 54.2303, 28.5238 ], [ 54.2289, 28.5286 ], [ 54.2273, 28.5337 ], [ 54.2261, 28.5379 ], [ 54.2237, 28.5382 ], [ 54.2237, 28.5423 ], [ 54.2225, 28.5447 ], [ 54.2205, 28.5458 ], [ 54.2181, 28.5416 ], [ 54.2163, 28.5423 ], [ 54.2159, 28.5468 ], [ 54.2137, 28.5495 ], [ 54.2114, 28.5516 ], [ 54.2098, 28.5526 ], [ 54.2098, 28.5640 ], [ 54.2058, 28.5681 ], [ 54.2030, 28.5670 ], [ 54.2004, 28.5705 ], [ 54.1980, 28.5736 ], [ 54.1961, 28.5773 ], [ 54.1929, 28.5784 ], [ 54.1903, 28.5736 ], [ 54.1899, 28.5664 ], [ 54.1895, 28.5588 ], [ 54.1903, 28.5499 ], [ 54.1859, 28.5396 ], [ 54.1871, 28.5286 ], [ 54.1857, 28.5204 ], [ 54.1820, 28.5166 ], [ 54.1790, 28.5094 ], [ 54.1818, 28.5046 ], [ 54.1784, 28.5004 ], [ 54.1742, 28.4970 ], [ 54.1706, 28.4939 ], [ 54.1639, 28.4740 ] ] ]);
+        
+        myPlacemarkWithContent = new ymaps.Placemark([54.224553,28.515545], {
             hintContent: 'Минская обл.,г.Борисов,ул.1 Июля,д.6,73-63-97,sys.at@tut.by',
             balloonContent: 'Минская обл.,г.Борисов,ул.1 Июля,д.6.73-63-97,sys.at@tut.by ',
-            iconContent: 'Борисов'
+//            iconContent: 'Борисов'
         }, {
            	iconLayout: 'default#imageWithContent',
-          	iconImageHref: 'image/map_borisov.png',
-        	iconImageSize: [170, 192],
-            iconImageOffset: [-100, -60],
-            iconContentOffset: [50, 90],
+          	iconImageHref: 'image/metka.png',
+        	iconImageSize: [30, 30],
+            iconImageOffset: [-60, 44],
+            iconContentOffset: [50,0],
     
     iconContentLayout: MyIconContentLayout
-
-        });
         
-         myPlacemarkWithContent = new ymaps.Placemark([54.224553,28.515545], {
-            hintContent: '',
-            balloonContent: '',
-            
-        }, {
-            iconLayout: 'default#image',
-            iconImageHref: 'image/metka.png',
-            iconImageSize: [30, 30],
-            iconImageOffset: [-60, 44],
         });
+
+
 
     myMap.geoObjects
-        .add(myPlacemark)
+        .add(myPolygon)
+//        .add(myPlacemark)
         .add(myPlacemarkWithContent);
+                    
+                
 });
 </script>
+
 </body>
 </html>
