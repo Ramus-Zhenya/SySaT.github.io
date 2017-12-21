@@ -130,7 +130,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/jquery.rd-navbar.js"></script>
     <script src="https://api-maps.yandex.ru/2.1.17/?lang=ru_RU" type="text/javascript"></script>
-    <script>
+    <script type="text/javascript">
         ymaps.ready(function() {
             var myMap = new ymaps.Map('map', {
 
@@ -257,12 +257,8 @@
                 iconContentLayout: MyIconContentLayout
 
             });
-
-
-
-            myMap.geoObjects
+                myMap.geoObjects
                 .add(myPolygon)
-                //        .add(myPlacemark)
                 .add(myPlacemarkWithContent);
 
 
